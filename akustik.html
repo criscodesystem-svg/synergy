@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Akustik Ingeniería + Acustica - Synergy</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Course Project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+    <link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+    <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="images/ICONOS(1).png" type="image/x-icon">
+    <style>
+      .main_nav_item a {
+        position: relative;
+        display: inline-block;
+        padding: 8px 10px;
+        font-weight: 500;
+        color: #000;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      
+      .main_nav_item a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0%;
+        height: 2px;
+        background-color: #000000; /* Rojo estilo cargado */
+        transition: width 0.4s ease;
+      }
+      
+      .main_nav_item a:hover::after {
+        width: 100%;
+      }
+      
+      .main_nav_item a:hover {
+        color: #000000; /* También puedes mantenerlo en negro si prefieres */
+      }
+      </style>
+
+    <style>
+    
+        /* Estilo para el contenedor con fondo de imagen */
+        .background-container {
+            background-image: url('images/5-Akustik-1536x420.jpg'); /* Cambia la URL de la imagen según la que quieras usar */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 300px 0;
+            text-align: center;
+        }
+
+        .background-container h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+       
+
+    </style>
+    
+</head>
+<body>
+
+    <!-- Header -->
+	<!-- Header -->
+	<header class="header d-flex flex-row" style="
+  background: linear-gradient(90deg, #ffffff, #feffff);
+  
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+">
+  <div class="header_content d-flex flex-row align-items-center w-100 justify-content-between">
+    
+    <!-- Logo -->
+    <div class="logo_container d-flex align-items-center">
+		<div class="logo d-flex align-items-center">
+		  <img src="images/ICONO.png" alt="Logo" style="height: 60px; width: auto; margin-right: 10px;"> <!-- Ajuste el tamaño aquí -->
+		</div>
+	  </div>
+
+    <!-- Main Navigation -->
+     <!-- Main Navigation -->
+<nav class="main_nav_container d-none d-md-block">
+  <div class="main_nav d-flex align-items-center justify-content-between">
+
+    <!-- Menu -->
+    <ul class="main_nav_list d-flex gap-4 mb-0" style="list-style: none;">
+      <li class="main_nav_item"><a href="index.html">INICIO</a></li>
+      <li class="main_nav_item"><a href="nosotros.html">NOSOTROS</a></li>
+      <li class="main_nav_item"><a href="productos-categoria.html">PRODUCTOS</a></li>
+      <li class="main_nav_item"><a href="aceros.html">ACEROS</a></li>
+
+      <!-- Dropdown -->
+      <li class="nav-item dropdown main_nav_item">
+        <a class="nav-link dropdown-toggle" href="#" id="clubesDropdown"
+           data-bs-toggle="dropdown" aria-expanded="false">
+          CLUBES
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end animate__animated animate__fadeIn shadow">
+          <li><a class="dropdown-item custom-hover" href="club-instalador.html">🔧 Club del Instalador</a></li>
+          <li><a class="dropdown-item custom-hover" href="club-carpintero.html">🪚 Club del Carpintero</a></li>
+        </ul>
+      </li>
+
+      <li class="main_nav_item"><a href="contactos.html">CONTACTOS</a></li>
+    </ul>
+
+    <!-- Redes Sociales -->
+    <div class="social-icons d-flex gap-4 ms-5" style="margin-left: 80px;">
+
+      <a href="https://www.facebook.com/SynergyBolivia" class="social-link" aria-label="Facebook">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/synergybolivia/reels/?__d=11" class="social-link" aria-label="Instagram">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/synergybolivia/posts/?feedView=all" class="social-link" aria-label="LinkedIn">
+        <i class="bi bi-linkedin"></i>
+      </a>
+    </div>
+
+  </div>
+</nav>
+<style>
+	.main_nav_list a {
+  color: #000000;
+  font-weight: 500;
+  transition: color .3s;
+}
+
+.main_nav_list a:hover {
+  color: #e40000; /* Rojo elegante */
+}
+
+.social-link {
+  font-size: 1.35rem;
+  transition: color .3s, transform .3s;
+}
+
+/* Facebook */
+.social-link[aria-label="Facebook"] {
+  color: #1877F2;
+}
+.social-link[aria-label="Facebook"]:hover {
+  color: #0f5dcc;
+  transform: translateY(-2px);
+}
+
+/* Instagram */
+.social-link[aria-label="Instagram"] {
+  color: #d6249f;
+}
+.social-link[aria-label="Instagram"]:hover {
+  color: #b31f84;
+  transform: translateY(-2px);
+}
+
+/* LinkedIn */
+.social-link[aria-label="LinkedIn"] {
+  color: #0A66C2;
+}
+.social-link[aria-label="LinkedIn"]:hover {
+  color: #084f94;
+  transform: translateY(-2px);
+}
+
+
+.dropdown-item.custom-hover {
+  color: #000;
+  font-weight: 500;
+  transition: background-color .3s, color .3s;
+}
+
+.dropdown-item.custom-hover:hover {
+  background-color: #000;
+  color: #fff !important;
+}
+
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+	
+	
+
+    <!-- Contacto 
+	<div class="header_side d-none d-lg-flex flex-row align-items-center" style="color: #333; font-weight: 500;">
+		<img src="images/phone-call.svg" alt="" style="height: 20px; margin-right: 10px; filter: invert(30%) sepia(70%) saturate(500%) hue-rotate(-10deg);">
+		<span>(591-3) 342 0345</span>
+	  </div>-->
+	  
+	  
+
+    <!-- Hamburger -->
+    <div class="hamburger_container d-md-none" style="color: #fff; font-size: 24px; cursor: pointer;">
+      <i class="fas fa-bars trans_200"></i>
+    </div>
+
+  </div>
+</header>
+  
+  <!-- Mobile Menu -->
+  
+	<!-- Menu -->
+	<!-- Menu -->
+	<!-- Menú Móvil -->
+<div class="mobile_menu d-md-none" style="display: none;">
+	<ul class="mobile_menu_list">
+	  <li class="mobile_menu_item"><a href="index.html">INICIO</a></li>
+	  <li class="mobile_menu_item"><a href="nosotros.html">NOSOTROS</a></li>
+	  <li class="mobile_menu_item"><a href="productos-categoria.html">PRODUCTOS</a></li>
+	  <li class="mobile_menu_item"><a href="aceros.html">ACEROS</a></li>
+  
+	  <!-- Clubes con submenú -->
+	  <li class="mobile_menu_item has-submenu">
+		<a href="#" class="submenu-toggle">CLUBES ▾</a>
+		<ul class="submenu">
+		  <li><a href="club-instalador.html">🔧 Club del Instalador</a></li>
+		  <li><a href="club-carpintero.html">🪚 Club del Carpintero</a></li>
+		</ul>
+	  </li>
+  
+	  <li class="mobile_menu_item"><a href="contactos.html">CONTACTOS</a></li>
+	</ul>
+  </div>
+  
+  <!-- Estilos -->
+  <style>
+	.mobile_menu {
+	  background-color: #ffffff;
+	  padding: 15px;
+	  position: fixed;
+	  top: 60px;
+	  left: 0;
+	  right: 0;
+	  z-index: 999;
+	}
+  
+	.mobile_menu_list {
+	  list-style: none;
+	  padding-left: 0;
+	  margin: 0;
+	}
+  
+	.mobile_menu_list a {
+	  color: #070707;
+	  font-weight: 500;
+	  text-decoration: none;
+	}
+  
+	.mobile_menu_list a:hover {
+	  color: #ff5252;
+	}
+  
+	.mobile_menu_item {
+	  margin: 10px 0;
+	  padding-left: 20px;
+	}
+  
+	.submenu {
+	  display: none;
+	  padding-left: 20px;
+	  margin-top: 5px;
+	}
+  
+	.submenu-toggle {
+	  cursor: pointer;
+	  transition: color 0.3s ease;
+	}
+  
+	.submenu-toggle:hover {
+	  color: #ffcc00;
+	}
+  
+	.submenu.show {
+	  display: block;
+	}
+  </style>
+  
+  <!-- Script -->
+  <script>
+	document.addEventListener('DOMContentLoaded', function () {
+	  // Mostrar/Ocultar el menú móvil
+	  document.querySelector('.hamburger_container')?.addEventListener('click', function () {
+		const mobileMenu = document.querySelector('.mobile_menu');
+		mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
+	  });
+  
+	  // Mostrar/Ocultar submenús
+	  document.querySelectorAll('.submenu-toggle').forEach(function (toggle) {
+		toggle.addEventListener('click', function (e) {
+		  e.preventDefault();
+		  const submenu = this.nextElementSibling;
+		  submenu.classList.toggle('show');
+		});
+	  });
+	});
+  </script>
+
+
+    <!-- Contenedor con la imagen de fondo y el título -->
+    
+    <div class="background-container">
+        
+    </div>
+    <style>
+        .hospital-section {
+          background: linear-gradient(135deg, #e6f0ff 0%, #fdfdfd 100%);
+          padding: 60px 20px;
+          text-align: center;
+        }
+      
+        .hospital-section h2 {
+          font-size: 2.8rem;
+          font-weight: bold;
+          color: #003366;
+          margin-bottom: 25px;
+        }
+      
+        .hospital-section p {
+          max-width: 950px;
+          margin: 0 auto 20px auto;
+          font-size: 1.15rem;
+          color: #333;
+          line-height: 1.8;
+          background-color: #ffffffd9;
+          padding: 15px 25px;
+          border-left: 5px solid #0056b3;
+          border-radius: 8px;
+          text-align: justify;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+      
+        .hospital-section p strong {
+          display: block;
+          margin-top: 15px;
+          font-size: 1.3rem;
+          color: #004488;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+      
+        
+        @media(max-width: 768px) {
+          .hospital-section h2 {
+            font-size: 2rem;
+          }
+      
+          .hospital-section p {
+            font-size: 1rem;
+          }
+        }
+        
+
+      </style>
+      
+      
+      <div class="hospital-section">
+        <h2>SOLUCIONES INTELIGENTES
+            ESPACIOS PROTEGIDOS DEL RUIDO
+        </h2>
+        <p>
+         Realizamos el asesoramiento acústico en proyectos de edificación, obra nueva o rehabilitacion a profesionales del sector 
+        como arquitectos, arquitectos técnicos, ingenieros e instaladores.</p>
+        <p>
+        Suministro de los materiales más idóneos para evitar transmisión de vibraciones y aislamientos acordes con la normativa
+    vigentes.</p>
+        
+       
+      </div>
+     
+    <footer class="footer bg-dark text-light pt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Menú de Navegación -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="mb-3 text-uppercase">Navegación</h5>
+                    <ul class="list-unstyled">
+                      <li class="mb-2">
+                        <i class="fas fa-home me-2"></i>
+                        <a href="index.html" class="text-light">Inicio</a>
+                      </li>
+                      <li class="mb-2">
+                        <i class="fas fa-users me-2"></i>
+                        <a href="nosotros.html" class="text-light">Nosotros</a>
+                      </li>
+                      <li class="mb-2">
+                        <i class="fas fa-box-open me-2"></i>
+                        <a href="productos-categoria.html" class="text-light">Productos</a>
+                      </li>
+                      <li class="mb-2">
+                        <i class="fas fa-industry me-2"></i>
+                        <a href="aceros.html" class="text-light">Aceros</a>
+                      </li>
+                      
+                      <!-- Clubes con submenús -->
+                      <li class="mb-2">
+                        <i class="fas fa-users-cog me-2"></i>
+                        <a href="#" class="text-light submenu-toggle">Clubes ▾</a>
+                        <ul class="submenu" style="display: none; padding-left: 25px; margin-top: 5px;">
+                        <li class="mb-2">
+                          <i class="fas fa-tools me-2"></i>
+                          <a href="club-instalador.html" class="text-light">Club del Instalador</a>
+                        </li>
+                        <li>
+                          <i class="fas fa-hammer me-2"></i>
+                          <a href="club-carpintero.html" class="text-light">Club del Carpintero</a>
+                        </li>
+                        </ul>
+                      </li>
+                      
+                      <li class="mb-2">
+                        <i class="fas fa-envelope me-2"></i>
+                        <a href="contactos.html" class="text-light">Contactos</a>
+                      </li>
+                      </ul>
+                      <script>
+                      // Mostrar/Ocultar submenú
+                      document.querySelectorAll('.submenu-toggle').forEach(function (toggle) {
+                        toggle.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const submenu = this.nextElementSibling;
+                        submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+                        });
+                      });
+                      </script>
+                      <style>
+                      .submenu-toggle {
+                        cursor: pointer;
+                      }
+                      
+                      .submenu-toggle:hover {
+                        color: #ffcc00;
+                      }
+                      
+                      .submenu a:hover {
+                        color: #ff5252;
+                      }
+                      </style>
+                </div>
+    
+                <!-- Horarios de Atención -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="mb-3 text-uppercase">Horarios de Atención</h5>
+                    <p class="mb-1"><strong>Lunes a Viernes:</strong></p>
+                    <p class="mb-2">08:00 a 12:30 - 14:30 a 18:30 Hrs</p>
+                    <p class="mb-1"><strong>Sábados:</strong></p>
+                    <p>08:30 a 13:00 Hrs</p>
+                </div>
+    
+                <!-- Contacto + Mapa -->
+                <div class="col-lg-5 col-md-12">
+                    <div class="row">
+                        <!-- Info de Contacto -->
+                        <div class="col-md-6 mb-3">
+                            <h5 class="mb-3 text-uppercase">Contacto</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>Av Tercer Anillo Interno entre Av. Alemana y Av. Mutualista #3275, Santa Cruz de la Sierra</li>
+                                <li class="mb-2"><i class="fas fa-phone me-2"></i>33420345</li>
+                                <li><i class="fas fa-globe me-2"></i><a href="http://www.synergy-bo.com/" target="_blank" class="text-light">synergy-bo.com</a></li>
+                            </ul>
+                        </div>
+    
+                        <!-- Mapa de Google -->
+                        <div class="col-md-6">
+                            <iframe 
+    src="https://www.google.com/maps?q=-17.760833,-63.166111&z=17&output=embed" 
+    width="100%" 
+    height="180" 
+    style="border:0; border-radius: 8px;" 
+    allowfullscreen="" 
+    loading="lazy">
+    </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <hr class="bg-light">
+    
+            <!-- Copyright + Redes -->
+            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center py-3">
+                <div>
+                    <span>Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados |
+						</span>
+                </div>
+                <div class="footer_social mt-3 mt-sm-0">
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a href="https://www.facebook.com/SynergyBolivia"><i class="fab fa-facebook-f text-light"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.instagram.com/synergybolivia/reels/?__d=11"><i class="fab fa-instagram text-light"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/company/synergybolivia/posts/?feedView=all"><i class="fab fa-linkedin-in text-light"></i></a></li>
+                    
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</html>

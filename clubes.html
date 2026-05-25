@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Clubes - Synergy</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Course Project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="icon" href="images/ICONOS(1).png" type="image/x-icon">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<style>
+	.main_nav_item a {
+	  position: relative;
+	  display: inline-block;
+	  padding: 8px 10px;
+	  font-weight: 500;
+	  color: #000;
+	  text-decoration: none;
+	  transition: color 0.3s ease;
+	}
+  
+	.main_nav_item a::after {
+	  content: "";
+	  position: absolute;
+	  left: 0;
+	  bottom: 0;
+	  width: 0%;
+	  height: 2px;
+	  background-color: #000000; /* Rojo estilo cargado */
+	  transition: width 0.4s ease;
+	}
+  
+	.main_nav_item a:hover::after {
+	  width: 100%;
+	}
+  
+	.main_nav_item a:hover {
+	  color: #000000; /* También puedes mantenerlo en negro si prefieres */
+	}
+  </style>
+
+
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+	<!-- Header -->
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<header class="fixed top-0 left-0 w-full bg-white z-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-center justify-between h-[90px]">
+
+      <!-- LOGO (SIEMPRE IZQUIERDA) -->
+      <div class="flex items-center">
+        <img
+          src="images/1-LogoNeg.png"
+          alt="Synergy"
+          class="h-[60px] w-auto"
+        />
+      </div>
+
+      <!-- NAV DESKTOP -->
+      <nav class="hidden md:flex items-center gap-6">
+
+        <!-- MENU -->
+        <ul class="flex items-center gap-4 text-sm font-medium text-black">
+  <li>
+    <a href="index.html" class="nav-link">INICIO</a>
+  </li>
+  <li>
+    <a href="nosotros.html" class="nav-link">NOSOTROS</a>
+  </li>
+  <li>
+    <a href="productos-categoria.html" class="nav-link">PRODUCTOS</a>
+  </li>
+ 
+  <li>
+    <a href="clubes.html" class="nav-link">CLUBES</a>
+  </li>
+  <li>
+    <a href="contactos.html" class="nav-link">CONTACTOS</a>
+  </li>
+</ul>
+
+
+        <!-- REDES SOCIALES -->
+         <div class="flex items-center gap-2 ml-6">
+          <a href="https://www.facebook.com/SynergyBolivia" class="social-icon">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/synergybolivia/" class="social-icon">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/@synergybolivia4431" class="social-icon">
+            <i class="bi bi-youtube"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/synergybolivia/" class="social-icon">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://wa.me/59169252476" class="social-icon">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+
+      </nav>
+
+      <!-- HAMBURGER MOBILE -->
+      <!-- Hamburger -->
+<div
+  class="hamburger_container md:hidden
+         flex items-center justify-center
+         w-10 h-10
+         rounded-md
+         cursor-pointer
+         text-black
+         hover:bg-gray-100
+         transition"
+>
+  <i class="fas fa-bars text-xl"></i>
+</div>
+
+
+    </div>
+    
+  </div>
+  
+</header>
+<style>
+  .social-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 9999px;
+    border: 1.5px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    transition: all 0.25s ease;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .social-icon:hover {
+    background: #000;
+    color: #fff;
+    transform: translateY(-2px);
+  }
+
+  body {
+    padding-top: 10px; /* para que el header fijo no tape contenido */
+  }
+  .nav-link {
+  position: relative;
+  padding: 6px 4px;
+  color: #000;
+  text-decoration: none;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.35s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+.nav-link.active::after {
+  width: 100%;
+}
+
+</style>
+
+  <!-- Mobile Menu -->
+  
+	<!-- Menu -->
+	<!-- Menu -->
+	<!-- Menú Móvil -->
+<div class="mobile_menu d-md-none" style="display: none;">
+	<ul class="mobile_menu_list">
+	  <li class="mobile_menu_item"><a href="index.html">INICIO</a></li>
+	  <li class="mobile_menu_item"><a href="nosotros.html">NOSOTROS</a></li>
+	  <li class="mobile_menu_item"><a href="productos-categoria.html">PRODUCTOS</a></li>
+	
+  
+	  <!-- Clubes con submenú -->
+	  <li class="mobile_menu_item"><a href="clubes.html">CLUBES</a></li>
+  
+	  <li class="mobile_menu_item"><a href="contactos.html">CONTACTOS</a></li>
+	</ul>
+  </div>
+  
+  <!-- Estilos -->
+  <style>
+	.mobile_menu {
+  background-color: #ffffff;
+  padding: 15px;
+  position: fixed;
+  top: 65px;   /* 🔥 ANTES 60px */
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+  
+	.mobile_menu_list {
+	  list-style: none;
+	  padding-left: 0;
+	  margin: 0;
+	}
+  
+	.mobile_menu_list a {
+	  color: #070707;
+	  font-weight: 500;
+	  text-decoration: none;
+	}
+  
+	.mobile_menu_list a:hover {
+	  color: #ff5252;
+	}
+  
+	.mobile_menu_item {
+	  margin: 10px 0;
+	  padding-left: 20px;
+	}
+  
+	.submenu {
+	  display: none;
+	  padding-left: 20px;
+	  margin-top: 5px;
+	}
+  
+	.submenu-toggle {
+	  cursor: pointer;
+	  transition: color 0.3s ease;
+	}
+  
+	.submenu-toggle:hover {
+	  color: #ffcc00;
+	}
+  
+	.submenu.show {
+	  display: block;
+	}
+  </style>
+  
+  <!-- Script -->
+  <script>
+	document.addEventListener('DOMContentLoaded', function () {
+	  // Mostrar/Ocultar el menú móvil
+	  document.querySelector('.hamburger_container')?.addEventListener('click', function () {
+		const mobileMenu = document.querySelector('.mobile_menu');
+		mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
+	  });
+  
+	  // Mostrar/Ocultar submenús
+	  document.querySelectorAll('.submenu-toggle').forEach(function (toggle) {
+		toggle.addEventListener('click', function (e) {
+		  e.preventDefault();
+		  const submenu = this.nextElementSibling;
+		  submenu.classList.toggle('show');
+		});
+	  });
+	});
+  </script>
+  
+	
+	<!-- Home -->
+
+	<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- ====================================== -->
+<!-- CLUBES -->
+<!-- ====================================== -->
+
+<section class="w-full bg-white pt-14 pb-10">
+
+    <!-- HERO -->
+    <div
+        class="flex flex-col md:flex-row gap-4
+               w-full max-w-7xl mx-auto
+               min-h-[350px] md:min-h-[75vh]
+               px-4 md:px-6
+               mt-4">
+
+        <!-- CARD 1 -->
+        <div
+           class="relative flex-1 md:hover:flex-[8]
+                  transition-all duration-500
+                  rounded-2xl overflow-hidden shadow-xl
+                  min-h-[220px] md:min-h-full">
+
+            <img src="IMAGENES/CLUB/1-Cdc.jpg"
+                 class="w-full h-full object-cover">
+
+            <div class="absolute inset-0 bg-black/50 flex flex-col justify-end p-6 md:p-8">
+
+                <h2 class="text-white text-2xl md:text-3xl font-bold">
+                    ¿ERES INSTALADOR INDEPENDIENTE?
+                </h2>
+
+                <p class="text-white text-sm md:text-base mt-2">
+                    Regístrate y benefíciate
+                </p>
+
+                <!-- BOTÓN -->
+                <button
+                    onclick="abrirFormulario('INSTALADOR')"
+                    class="mt-5 w-fit bg-white text-black
+                           px-6 py-3 rounded-full
+                           font-semibold text-sm
+                           hover:bg-black hover:text-white
+                           transition-all duration-300">
+
+                    REGISTRARME →
+
+                </button>
+
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div
+           class="relative flex-1 md:hover:flex-[8]
+                  transition-all duration-500
+                  rounded-2xl overflow-hidden shadow-xl
+                  min-h-[220px] md:min-h-full">
+
+            <img src="IMAGENES/CLUB/1-Cdi.jpg"
+                 class="w-full h-full object-cover">
+
+            <div class="absolute inset-0 bg-black/50 flex flex-col justify-end p-6 md:p-8">
+
+                <h2 class="text-white text-2xl md:text-3xl font-bold">
+                    ¿ERES CARPINTERO INDEPENDIENTE?
+                </h2>
+
+                <p class="text-white text-sm md:text-base mt-2">
+                    Regístrate y benefíciate
+                </p>
+
+                <!-- BOTÓN -->
+                <button
+                    onclick="abrirFormulario('CARPINTERO')"
+                    class="mt-5 w-fit bg-white text-black
+                           px-6 py-3 rounded-full
+                           font-semibold text-sm
+                           hover:bg-black hover:text-white
+                           transition-all duration-300">
+
+                    REGISTRARME →
+
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ====================================== -->
+<!-- MODAL FORMULARIO -->
+<!-- ====================================== -->
+
+<div id="modalRegistro"
+     class="fixed inset-0 bg-black/70
+            z-[99999]
+            hidden
+            items-center justify-center
+            px-4">
+
+    <!-- CAJA -->
+    <div class="bg-white rounded-3xl
+                w-full max-w-lg
+                overflow-hidden
+                animate__animated animate__zoomIn">
+
+        <!-- HEADER -->
+        <div class="bg-black text-white px-8 py-6">
+
+            <div class="flex items-center justify-between">
+
+                <div>
+
+                    <p class="text-sm opacity-80">
+                        CLUB SYNERGY
+                    </p>
+
+                    <h2 class="text-2xl font-bold mt-1">
+                        Registro
+                    </h2>
+
+                </div>
+
+                <!-- CERRAR -->
+                <button onclick="cerrarFormulario()"
+                        class="text-3xl leading-none hover:scale-110 transition">
+                    &times;
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- FORM -->
+        <form id="formRegistro"
+              class="p-8 space-y-5">
+
+            <!-- NOMBRE -->
+            <div>
+                <label class="block text-sm font-semibold mb-2">
+                    Nombre Completo
+                </label>
+
+                <input type="text"
+                       id="nombre"
+                       required
+                       class="w-full border border-gray-300
+                              rounded-xl px-4 py-3
+                              focus:outline-none focus:border-black">
+            </div>
+
+            <!-- CI -->
+            <div>
+                <label class="block text-sm font-semibold mb-2">
+                    CI / NIT
+                </label>
+
+                <input type="text"
+                       id="ci"
+                       required
+                       class="w-full border border-gray-300
+                              rounded-xl px-4 py-3
+                              focus:outline-none focus:border-black">
+            </div>
+
+            <!-- TELEFONO -->
+            <div>
+                <label class="block text-sm font-semibold mb-2">
+                    Teléfono
+                </label>
+
+                <input type="text"
+                       id="telefono"
+                       required
+                       class="w-full border border-gray-300
+                              rounded-xl px-4 py-3
+                              focus:outline-none focus:border-black">
+            </div>
+
+            <!-- RUBRO -->
+            <div>
+                <label class="block text-sm font-semibold mb-2">
+                    Rubro
+                </label>
+
+                <select id="rubro"
+                        required
+                        class="w-full border border-gray-300
+                               rounded-xl px-4 py-3
+                               focus:outline-none focus:border-black">
+
+                    <option value="">
+                        Seleccionar
+                    </option>
+
+                    <option value="CARPINTERO">
+                        CARPINTERO
+                    </option>
+
+                    <option value="INSTALADOR">
+                        INSTALADOR
+                    </option>
+
+                </select>
+            </div>
+
+            <!-- BOTÓN -->
+            <button type="submit"
+                    class="w-full bg-black text-white
+                           py-4 rounded-xl
+                           font-semibold
+                           hover:bg-gray-800
+                           transition-all duration-300">
+
+                ENVIAR POR WHATSAPP
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<!-- ====================================== -->
+<!-- SCRIPT -->
+<!-- ====================================== -->
+
+<script>
+
+    const modal = document.getElementById('modalRegistro');
+
+    const rubro = document.getElementById('rubro');
+
+    // ABRIR
+    function abrirFormulario(tipo){
+
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+
+        rubro.value = tipo;
+    }
+
+    // CERRAR
+    function cerrarFormulario(){
+
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+    }
+
+    // CERRAR AL DAR FUERA
+    modal.addEventListener('click', function(e){
+
+        if(e.target === modal){
+            cerrarFormulario();
+        }
+
+    });
+
+    // ENVIAR
+    document.getElementById('formRegistro')
+    .addEventListener('submit', function(e){
+
+        e.preventDefault();
+
+        const nombre = document.getElementById('nombre').value;
+        const ci = document.getElementById('ci').value;
+        const telefono = document.getElementById('telefono').value;
+        const rubroValor = document.getElementById('rubro').value;
+
+        let mensaje = `*NUEVO REGISTRO CLUB SYNERGY*%0A%0A`;
+
+        mensaje += `👤 Nombre: ${nombre}%0A`;
+        mensaje += `🪪 CI / NIT: ${ci}%0A`;
+        mensaje += `📱 Teléfono: ${telefono}%0A`;
+        mensaje += `🛠 Rubro: ${rubroValor}`;
+
+        // 🔥 CAMBIA TU NÚMERO
+        const numero = "59169252476";
+
+        const url = `https://wa.me/${numero}?text=${mensaje}`;
+
+        window.open(url, '_blank');
+
+    });
+
+</script>
+
+
+<section class="bg-gray-200 py-6">
+  <div class="max-w-7xl mx-auto flex flex-col items-center justify-center gap-4 px-6 text-center">
+
+  
+
+    <!-- TEXTO -->
+    <h2 class="text-black font-bold uppercase text-lg md:text-2xl lg:text-3xl leading-snug">
+      EL PUENTE DE CONEXIÓN ENTRE EL CLIENTE FINAL Y <br>
+      EL INSTALADOR / CARPINTERO CAPACITADO.
+    </h2>
+
+  </div>
+</section>
+
+
+
+
+
+<section class="bg-white py-16">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
+
+    <!-- COLUMNA IZQUIERDA -->
+    <div class="flex flex-col items-center">
+      <!-- IMAGEN MÁS PEQUEÑA -->
+      <img src="images/RGB Synergy Clubs-03.png"
+           alt="Producción de Aceros"
+           class="max-w-[180px] md:max-w-[220px] h-auto mb-6">
+
+      <!-- TEXTO JUSTIFICADO -->
+      <p class="text-gray-700 mb-4 leading-relaxed text-justify">
+        Tiene como propósito principal fomentar el uso de los
+        sistemas de construcción en seco a través de la
+        capacitación y el acompañamiento a técnicos, instaladores
+        y personas interesadas en este rubro 
+        <br>
+        <br>
+        De este modo, Synergy impulsa el crecimiento de
+profesionales especializados en construcción en seco y
+asegura a los clientes trabajos de alta calidad, respaldados
+por el uso de productos Synergy.
+      </p>
+      
+    </div>
+
+    <!-- COLUMNA DERECHA -->
+    <div class="flex flex-col items-center">
+      <!-- IMAGEN MÁS PEQUEÑA -->
+      <img src="images/RGB Synergy Clubs-02.png"
+           alt="Accesorios y cubiertas"
+           class="max-w-[180px] md:max-w-[220px] h-auto mb-6">
+
+      <!-- TEXTO JUSTIFICADO -->
+      <p class="text-gray-700 mb-4 leading-relaxed text-justify">
+        Tiene como propósito principal impulsar el uso de
+tableros de madera y soluciones para muebles a través de
+la capacitación y el acompañamiento constante a
+carpinteros, armadores y personas interesadas en el
+mundo de la carpintería
+<br>
+<br>
+De este modo, Synergy impulsa el crecimiento de
+profesionales especializados en carpintería y armado de
+muebles y asegura a los clientes trabajos de alta calidad,
+respaldados por productos de excelente terminación.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Banner de Beneficios -->
+<!-- BOTONES / CUADRADOS -->
+<!-- BOTONES / CUADRADOS -->
+<section class="py-12 bg-gray-700/20">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+
+    <!-- TÍTULO -->
+    <h2 class="text-2xl md:text-3xl font-extrabold mb-8">
+      BENEFICIOS
+    </h2>
+
+    <!-- TARJETAS -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+
+      <div
+        class="flex items-center justify-center
+               border border-black
+               px-3 py-2 h-16
+               text-sm font-extrabold
+               cursor-pointer
+               hover:bg-black hover:text-white
+               transition"
+      >
+        PROGRAMA DE PUNTOS
+      </div>
+
+      <div
+        class="flex items-center justify-center
+               border border-black
+               px-3 py-2 h-16
+               text-sm font-extrabold
+               cursor-pointer
+               hover:bg-black hover:text-white
+               transition"
+      >
+        PRECIOS PREFERENCIALES
+      </div>
+
+      <div
+        class="flex items-center justify-center
+               border border-black
+               px-3 py-2 h-16
+               text-sm font-extrabold
+               cursor-pointer
+               hover:bg-black hover:text-white
+               transition"
+      >
+        CAPACITACIONES
+      </div>
+
+      <div
+        class="flex items-center justify-center
+               border border-black
+               px-3 py-2 h-16
+               text-sm font-extrabold
+               cursor-pointer
+               hover:bg-black hover:text-white
+               transition"
+      >
+        SOPORTE TÉCNICO
+      </div>
+
+      <div
+        class="flex items-center justify-center
+               border border-black
+               px-3 py-2 h-16
+               text-sm font-extrabold
+               cursor-pointer
+               hover:bg-black hover:text-white
+               transition"
+      >
+        CERTIFICACIONES
+      </div>
+
+      <div
+        class="flex items-center justify-center
+               border border-black
+               px-3 py-2 h-16
+               text-sm font-extrabold
+               cursor-pointer
+               hover:bg-black hover:text-white
+               transition"
+      >
+        BOLSA DE TRABAJO
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- FUENTE -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+</style>
+
+<section class="bg-white py-14">
+
+  <div class="max-w-7xl mx-auto px-4">
+
+    <!-- TITULO -->
+    <div class="text-center mb-10">
+
+      <h2 class="text-2xl md:text-4xl font-extrabold uppercase text-black">
+        Instaladores - Carpinteros de Calidad
+      </h2>
+
+      <!-- MENU -->
+      <div class="flex justify-center gap-8 mt-5 text-sm font-semibold uppercase">
+
+        <button id="btnInstaladores"
+          class="border-b-2 border-black pb-1 transition-all duration-300">
+          Instaladores
+        </button>
+
+        <button id="btnCarpintero"
+          class="text-gray-400 hover:text-black transition-all duration-300">
+          Carpinteros
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- ====================================== -->
+    <!-- INSTALADORES -->
+    <!-- ====================================== -->
+
+    <div id="gridInstaladores"
+      class="flex flex-wrap justify-center gap-5">
+
+      <!-- CARD -->
+      <div class="w-[210px] bg-black text-white rounded-2xl overflow-hidden shadow-xl">
+
+        <div class="relative overflow-hidden">
+
+          <img src="images/3-2-600x600.jpg"
+            class="h-[180px] w-full object-cover hover:scale-105 transition duration-500"
+            alt="">
+
+          <div class="absolute bottom-0 h-28 w-full bg-gradient-to-t from-black to-transparent"></div>
+
+        </div>
+
+        <div class="px-3 py-3">
+
+          <p class="text-[12px] border-b border-gray-700 pb-2 leading-relaxed">
+            “Instalación precisa y excelente acabado.”
+          </p>
+
+          <p class="mt-3 font-semibold text-sm">
+            — Juan Pérez
+          </p>
+
+          <p class="text-xs bg-gradient-to-r from-purple-500 to-fuchsia-500 text-transparent bg-clip-text">
+            Instalador Certificado
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="w-[210px] bg-black text-white rounded-2xl overflow-hidden shadow-xl">
+
+        <div class="relative overflow-hidden">
+
+          <img src="images/1-Cbba-600x600.jpg"
+            class="h-[180px] w-full object-cover hover:scale-105 transition duration-500"
+            alt="">
+
+          <div class="absolute bottom-0 h-28 w-full bg-gradient-to-t from-black to-transparent"></div>
+
+        </div>
+
+        <div class="px-3 py-3">
+
+          <p class="text-[12px] border-b border-gray-700 pb-2 leading-relaxed">
+            “Trabajo limpio y puntual.”
+          </p>
+
+          <p class="mt-3 font-semibold text-sm">
+            — Carlos R.
+          </p>
+
+          <p class="text-xs bg-gradient-to-r from-purple-500 to-fuchsia-500 text-transparent bg-clip-text">
+            Instalador Profesional
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="w-[210px] bg-black text-white rounded-2xl overflow-hidden shadow-xl">
+
+        <div class="relative overflow-hidden">
+
+          <img src="images/1-Cbba-600x600.jpg"
+            class="h-[180px] w-full object-cover hover:scale-105 transition duration-500"
+            alt="">
+
+          <div class="absolute bottom-0 h-28 w-full bg-gradient-to-t from-black to-transparent"></div>
+
+        </div>
+
+        <div class="px-3 py-3">
+
+          <p class="text-[12px] border-b border-gray-700 pb-2 leading-relaxed">
+            “Trabajo limpio y puntual.”
+          </p>
+
+          <p class="mt-3 font-semibold text-sm">
+            — Miguel A.
+          </p>
+
+          <p class="text-xs bg-gradient-to-r from-purple-500 to-fuchsia-500 text-transparent bg-clip-text">
+            Instalador Profesional
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="w-[210px] bg-black text-white rounded-2xl overflow-hidden shadow-xl">
+
+        <div class="relative overflow-hidden">
+
+          <img src="images/1-Cbba-600x600.jpg"
+            class="h-[180px] w-full object-cover hover:scale-105 transition duration-500"
+            alt="">
+
+          <div class="absolute bottom-0 h-28 w-full bg-gradient-to-t from-black to-transparent"></div>
+
+        </div>
+
+        <div class="px-3 py-3">
+
+          <p class="text-[12px] border-b border-gray-700 pb-2 leading-relaxed">
+            “Excelente atención y experiencia.”
+          </p>
+
+          <p class="mt-3 font-semibold text-sm">
+            — Roberto M.
+          </p>
+
+          <p class="text-xs bg-gradient-to-r from-purple-500 to-fuchsia-500 text-transparent bg-clip-text">
+            Instalador Senior
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ====================================== -->
+    <!-- CARPINTEROS -->
+    <!-- ====================================== -->
+
+    <div id="gridCarpintero"
+      class="hidden flex-wrap justify-center gap-5">
+
+      <!-- CARD -->
+      <div class="w-[210px] bg-black text-white rounded-2xl overflow-hidden shadow-xl">
+
+        <div class="relative overflow-hidden">
+
+          <img src="images/carpintero-1.jpg"
+            class="h-[180px] w-full object-cover hover:scale-105 transition duration-500"
+            alt="">
+
+          <div class="absolute bottom-0 h-28 w-full bg-gradient-to-t from-black to-transparent"></div>
+
+        </div>
+
+        <div class="px-3 py-3">
+
+          <p class="text-[12px] border-b border-gray-700 pb-2 leading-relaxed">
+            “Carpintería fina con acabados premium.”
+          </p>
+
+          <p class="mt-3 font-semibold text-sm">
+            — Luis M.
+          </p>
+
+          <p class="text-xs bg-gradient-to-r from-amber-500 to-orange-500 text-transparent bg-clip-text">
+            Carpintero
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="w-[210px] bg-black text-white rounded-2xl overflow-hidden shadow-xl">
+
+        <div class="relative overflow-hidden">
+
+          <img src="images/carpintero-2.jpg"
+            class="h-[180px] w-full object-cover hover:scale-105 transition duration-500"
+            alt="">
+
+          <div class="absolute bottom-0 h-28 w-full bg-gradient-to-t from-black to-transparent"></div>
+
+        </div>
+
+        <div class="px-3 py-3">
+
+          <p class="text-[12px] border-b border-gray-700 pb-2 leading-relaxed">
+            “Diseños personalizados en madera.”
+          </p>
+
+          <p class="mt-3 font-semibold text-sm">
+            — Mario G.
+          </p>
+
+          <p class="text-xs bg-gradient-to-r from-amber-500 to-orange-500 text-transparent bg-clip-text">
+            Carpintero Artesanal
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="w-[210px] bg-black text-white rounded-2xl overflow-hidden shadow-xl">
+
+        <div class="relative overflow-hidden">
+
+          <img src="images/carpintero-1.jpg"
+            class="h-[180px] w-full object-cover hover:scale-105 transition duration-500"
+            alt="">
+
+          <div class="absolute bottom-0 h-28 w-full bg-gradient-to-t from-black to-transparent"></div>
+
+        </div>
+
+        <div class="px-3 py-3">
+
+          <p class="text-[12px] border-b border-gray-700 pb-2 leading-relaxed">
+            “Muebles modernos y funcionales.”
+          </p>
+
+          <p class="mt-3 font-semibold text-sm">
+            — Diego C.
+          </p>
+
+          <p class="text-xs bg-gradient-to-r from-amber-500 to-orange-500 text-transparent bg-clip-text">
+            Carpintero Profesional
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="w-[210px] bg-black text-white rounded-2xl overflow-hidden shadow-xl">
+
+        <div class="relative overflow-hidden">
+
+          <img src="images/carpintero-2.jpg"
+            class="h-[180px] w-full object-cover hover:scale-105 transition duration-500"
+            alt="">
+
+          <div class="absolute bottom-0 h-28 w-full bg-gradient-to-t from-black to-transparent"></div>
+
+        </div>
+
+        <div class="px-3 py-3">
+
+          <p class="text-[12px] border-b border-gray-700 pb-2 leading-relaxed">
+            “Acabados elegantes y personalizados.”
+          </p>
+
+          <p class="mt-3 font-semibold text-sm">
+            — José P.
+          </p>
+
+          <p class="text-xs bg-gradient-to-r from-amber-500 to-orange-500 text-transparent bg-clip-text">
+            Carpintero Experto
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SCRIPT -->
+<script>
+
+const btnInstaladores = document.getElementById('btnInstaladores');
+const btnCarpintero = document.getElementById('btnCarpintero');
+
+const gridInstaladores = document.getElementById('gridInstaladores');
+const gridCarpintero = document.getElementById('gridCarpintero');
+
+btnInstaladores.addEventListener('click', () => {
+
+  gridInstaladores.classList.remove('hidden');
+  gridInstaladores.classList.add('flex');
+
+  gridCarpintero.classList.add('hidden');
+  gridCarpintero.classList.remove('flex');
+
+  btnInstaladores.classList.add('border-b-2', 'border-black');
+  btnInstaladores.classList.remove('text-gray-400');
+
+  btnCarpintero.classList.remove('border-b-2', 'border-black');
+  btnCarpintero.classList.add('text-gray-400');
+
+});
+
+btnCarpintero.addEventListener('click', () => {
+
+  gridCarpintero.classList.remove('hidden');
+  gridCarpintero.classList.add('flex');
+
+  gridInstaladores.classList.add('hidden');
+  gridInstaladores.classList.remove('flex');
+
+  btnCarpintero.classList.add('border-b-2', 'border-black');
+  btnCarpintero.classList.remove('text-gray-400');
+
+  btnInstaladores.classList.remove('border-b-2', 'border-black');
+  btnInstaladores.classList.add('text-gray-400');
+
+});
+
+</script>
+
+
+
+<!-- ===================================== -->
+<!-- ICONO FLOTANTE SYNEREX -->
+<!-- ===================================== -->
+
+<a href="https://synerex.com.bo/"
+   target="_blank"
+   class="synerex-float">
+
+    <!-- TEXTO CIRCULAR -->
+    <svg class="circular-text" viewBox="0 0 100 100">
+
+        <defs>
+            <path id="circlePath"
+                  d="M 50,50
+                     m -38,0
+                     a 38,38 0 1,1 76,0
+                     a 38,38 0 1,1 -76,0"/>
+        </defs>
+
+        <text>
+            <textPath href="#circlePath">
+                • CONSTRUCCIÓN DE PROYECTOS •
+            </textPath>
+        </text>
+
+    </svg>
+
+    <!-- LOGO -->
+    <img src="IMAGENES/SYNEREX/isologitipo_syx-azul.png"
+         alt="Synerex"
+         class="synerex-logo">
+
+</a>
+
+<!-- ESTILOS -->
+<style>
+
+.synerex-float{
+
+    position: fixed;
+
+    right: 22px;
+    bottom: 22px;
+
+    z-index: 9999;
+
+    width: 88px;
+    height: 88px;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    box-shadow:
+      0 10px 30px rgba(0,0,0,.18);
+
+    transition: all .35s ease;
+
+    overflow: hidden;
+}
+
+/* HOVER */
+.synerex-float:hover{
+
+    transform: translateY(-6px) scale(1.05);
+
+    box-shadow:
+      0 16px 38px rgba(0,0,0,.25);
+}
+
+/* LOGO */
+.synerex-logo{
+
+    width: 42px;
+    height: 42px;
+
+    object-fit: contain;
+
+    position: relative;
+
+    z-index: 3;
+
+    transition: transform .35s ease;
+}
+
+.synerex-float:hover .synerex-logo{
+
+    transform: scale(1.08);
+}
+
+/* TEXTO CIRCULAR */
+.circular-text{
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    animation: rotateText 12s linear infinite;
+}
+
+.circular-text text{
+
+    fill: #0b2d5c;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+/* ROTACIÓN */
+@keyframes rotateText{
+
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+
+}
+
+/* EFECTO PULSO */
+.synerex-float::before{
+
+    content: "";
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+
+    border: 2px solid rgba(11,45,92,.20);
+
+    animation: synerexPulse 2s infinite;
+}
+
+@keyframes synerexPulse{
+
+    0%{
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    100%{
+      transform: scale(1.35);
+      opacity: 0;
+    }
+
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    .synerex-float{
+
+        width: 72px;
+        height: 72px;
+
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .synerex-logo{
+
+        width: 34px;
+        height: 34px;
+    }
+
+    .circular-text text{
+
+        font-size: 6px;
+    }
+
+}
+
+</style>
+    
+
+
+
+
+
+
+
+
+	
+	  
+<!-- SECCION CONTACTENOS -->
+<!-- SECCION CONTACTENOS -->
+<section class="bg-gray-700/20 py-12">
+  <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+    
+    <!-- TEXTO -->
+    <div class="mb-6 md:mb-0 md:ml-20 text-center md:text-left">
+      <h3 class="text-2xl md:text-4x2 font-extrabold text-black">
+        ENCUENTRA A UN EXPERTO QUE TE BRINDE ASESORÍA
+      </h3>
+
+      <p class="mt-3 text-sm md:text-base text-gray-700 max-w-xl">
+        Contáctanos por WhatsApp y expertos de confianza te ayudarán.
+      </p>
+    </div>
+  
+    <!-- BOTÓN -->
+  <button
+  id="btnContactos"
+  class="btn-contactos px-8 py-3 border-2 border-black font-semibold rounded-lg
+         text-black
+         hover:bg-black
+         transition duration-300
+         md:mr-20"
+>
+  CONTÁCTENOS →
+</button>
+<style>
+  .btn-contactos {
+    color: #000 !important;
+  }
+
+  .btn-contactos:hover {
+    color: #fff !important;
+  }
+</style>
+
+
+
+
+  </div>
+</section>
+
+
+<!--- FORMULARIO OCULTO-->
+<section id="formContacto" class="hidden bg-white py-8">
+  <div class="max-w-3xl mx-auto px-3">
+
+    <h2 class="text-base font-bold mb-2">
+      SOLUCIONES INNOVADORAS CON ALCANCE NACIONAL
+    </h2>
+
+    <p class="mb-5 text-xs text-gray-600 leading-relaxed">
+      Synergy presente a nivel nacional, con experiencia y sólidas relaciones
+      para gestionar proyectos de cualquier complejidad.
+    </p>
+
+    <form id="formularioWhatsapp" class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+
+      <!-- Tipo consulta -->
+      <div class="md:col-span-2">
+        <select id="tipoConsulta" class="w-full border border-gray-300 px-2 py-1.5" required>
+          <option value="">Tipo Consulta (requerido)</option>
+          <option>General</option>
+          <option>Producto específico</option>
+          <option>Sistema constructivo</option>
+          <option>Servicio</option>
+        </select>
+      </div>
+
+      <input type="text" id="nombre" placeholder="Nombre" class="border border-gray-300 px-2 py-1.5" required>
+      <input type="text" id="apellido" placeholder="Apellido" class="border border-gray-300 px-2 py-1.5" required>
+      <input type="email" id="correo" placeholder="Correo Electrónico" class="border border-gray-300 px-2 py-1.5 md:col-span-2" required>
+      <input type="text" id="empresa" placeholder="Empresa" class="border border-gray-300 px-2 py-1.5">
+      <input type="text" id="telefono" placeholder="Teléfono (requerido)" class="border border-gray-300 px-2 py-1.5" required>
+      <textarea id="mensaje" rows="3" placeholder="Mensaje" class="border border-gray-300 px-2 py-1.5 md:col-span-2"></textarea>
+
+      <div class="md:col-span-2 flex items-center gap-3">
+        <button type="submit" class="border border-black px-3 py-1 text-xs font-semibold hover:bg-black hover:text-white transition">
+          Enviar →
+        </button>
+
+        <span class="text-[11px] text-gray-500">
+          Envíe mensaje a WhatsApp
+        </span>
+      </div>
+
+    </form>
+  </div>
+</section>
+
+<script>
+  const btn = document.getElementById('btnContactos');
+  const form = document.getElementById('formContacto');
+  const navbar = document.querySelector('nav');
+
+  btn.addEventListener('click', () => {
+    form.classList.toggle('hidden');
+    const offset = navbar ? navbar.offsetHeight + 20 : 100;
+    window.scrollTo({
+      top: form.offsetTop - offset,
+      behavior: 'smooth'
+    });
+  });
+
+  // Enviar datos a WhatsApp
+  const formulario = document.getElementById('formularioWhatsapp');
+  formulario.addEventListener('submit', function(e) {
+    e.preventDefault(); // Evita que el formulario haga submit normal
+
+    // Obtener valores
+    const tipo = document.getElementById('tipoConsulta').value;
+    const nombre = document.getElementById('nombre').value;
+    const apellido = document.getElementById('apellido').value;
+    const correo = document.getElementById('correo').value;
+    const empresa = document.getElementById('empresa').value;
+    const telefono = document.getElementById('telefono').value;
+    const mensaje = document.getElementById('mensaje').value;
+
+    // Formar el mensaje para WhatsApp
+    let texto = `*Nuevo mensaje de contacto*%0A`;
+    texto += `Tipo de Consulta: ${tipo}%0A`;
+    texto += `Nombre: ${nombre} ${apellido}%0A`;
+    texto += `Correo: ${correo}%0A`;
+    texto += `Empresa: ${empresa}%0A`;
+    texto += `Teléfono: ${telefono}%0A`;
+    texto += `Mensaje: ${mensaje}`;
+
+    // Número de WhatsApp (Bolivia sin 0 ni +)
+    const numero = "59169252476";
+
+    // Abrir WhatsApp Web / App
+    const url = `https://wa.me/${numero}?text=${texto}`;
+    window.open(url, "_blank");
+  });
+</script>
+	  
+	
+	  
+	
+ <footer class="bg-black text-gray-400 text-sm py-6">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- EMPRESA -->
+      <div>
+        <h3 class="text-white font-semibold mb-2 uppercase text-xs tracking-wider">
+          SOCIEDAD SYNERGY LTDA.
+        </h3>
+        <p class="leading-snug max-w-sm">
+          Soluciones constructivas para construcción en seco y tableros de madera.
+        </p>
+      </div>
+
+      <!-- NAVEGACIÓN -->
+      <div>
+        <h3 class="text-white font-semibold mb-2 uppercase text-xs tracking-wider">
+          Navegación
+        </h3>
+        <ul class="space-y-1">
+          <li><a href="index.html" class="hover:text-white transition">Inicio</a></li>
+          <li><a href="nosotros.html" class="hover:text-white transition">Nosotros</a></li>
+          <li><a href="productos-categoria.html" class="hover:text-white transition">Productos</a></li>
+         
+           <li><a href="clubes.html" class="hover:text-white transition">Clubes</a></li>
+            <li><a href="contactos.html" class="hover:text-white transition">Contactos</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACTO -->
+     <div>
+  <h3 class="text-white font-semibold mb-2 uppercase text-xs tracking-wider">
+    Contacto
+  </h3>
+
+  <p class="text-gray-400 leading-snug mb-3 max-w-xs">
+    Atención personalizada y asesoramiento técnico.
+    Contáctenos directamente vía WhatsApp.
+  </p>
+
+  <a
+    href="https://wa.me/59169252476"
+    target="_blank"
+    class="inline-flex items-center gap-2
+           border border-gray-600
+           px-4 py-1.5
+           text-xs font-semibold text-white
+           hover:text-green-400 hover:border-green-400
+           transition-colors duration-300"
+  >
+    <!-- Ícono WhatsApp -->
+    <svg xmlns="http://www.w3.org/2000/svg"
+         class="w-4 h-4 transition-colors duration-300"
+         fill="currentColor"
+         viewBox="0 0 24 24">
+      <path
+        d="M12.04 2C6.56 2 2.09 6.47 2.09 11.95c0 2.11.55 4.16 1.6 5.96L2 22l4.24-1.58a9.89 9.89 0 0 0 4.8 1.23h.01c5.48 0 9.95-4.47 9.95-9.95C20.99 6.47 17.52 2 12.04 2z"
+      />
+    </svg>
+
+    Escríbanos por WhatsApp
+  </a>
+</div>
+
+
+    </div>
+
+    <!-- LÍNEA INFERIOR -->
+    <div class="border-t border-gray-800 mt-6 pt-3 text-center text-[11px] text-gray-500">
+      © <script>document.write(new Date().getFullYear())</script> Sociedad Synergy Ltda.
+    </div>
+
+  </div>
+</footer>
+
+	
+<script>
+/* 🚫 Bloquear clic derecho */
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+
+/* 🚫 Bloquear teclas comunes de inspección */
+document.addEventListener('keydown', function(e) {
+
+    // F12
+    if (e.key === "F12") {
+        e.preventDefault();
+    }
+
+    // Ctrl + Shift + I / J / C
+    if (e.ctrlKey && e.shiftKey && (
+        e.key === "I" || e.key === "i" ||
+        e.key === "J" || e.key === "j" ||
+        e.key === "C" || e.key === "c"
+    )) {
+        e.preventDefault();
+    }
+
+    // Ctrl + U (ver código fuente)
+    if (e.ctrlKey && (e.key === "U" || e.key === "u")) {
+        e.preventDefault();
+    }
+
+    // Ctrl + S (guardar página)
+    if (e.ctrlKey && (e.key === "S" || e.key === "s")) {
+        e.preventDefault();
+    }
+});
+
+/* 🚫 Bloquear selección de texto */
+document.addEventListener('selectstart', function(e) {
+    e.preventDefault();
+});
+
+/* 🚫 Bloquear copiar */
+document.addEventListener('copy', function(e) {
+    e.preventDefault();
+});
+
+/* 🚫 Detectar DevTools */
+setInterval(function() {
+    if (window.outerWidth - window.innerWidth > 150 || 
+        window.outerHeight - window.innerHeight > 150) {
+        document.body.innerHTML = "<h1 style='color:red;text-align:center;'>Acceso no permitido</h1>";
+    }
+}, 1000);
+</script>
+	
+	  
+
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Navbar Mejorado</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Iconos y fuente -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .navbar {
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      padding: 0.8rem 1rem;
+    }
+
+    .navbar-brand img {
+      height: 50px;
+    }
+
+    .nav-link {
+      position: relative;
+      color: #333 !important;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      left: 50%;
+      bottom: 0;
+      background-color: #d9534f;
+      transition: all 0.3s ease;
+      transform: translateX(-50%);
+    }
+
+    .nav-link:hover::after {
+      width: 60%;
+    }
+
+    .nav-link:hover {
+      color: #d9534f !important;
+    }
+
+    .dropdown-menu {
+      border: none;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 0.3s ease;
+      border-radius: 0.5rem;
+    }
+
+    .dropdown-item:hover {
+      background-color: #d9534f;
+      color: #fff !important;
+    }
+
+    .navbar-contact {
+      color: #555;
+      font-weight: 500;
+      font-size: 15px;
+    }
+
+    .navbar-contact i {
+      margin-right: 8px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Estilo especial para pantallas pequeñas */
+    @media (max-width: 991px) {
+      .navbar-collapse {
+        background-color: #fff;
+        padding: 1rem;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        border-radius: 0.5rem;
+        margin-top: 0.5rem;
+      }
+
+      .navbar-nav .nav-item {
+        margin-bottom: 10px;
+      }
+
+      .navbar-nav .nav-link {
+        font-size: 17px;
+        padding: 10px 15px;
+        border-radius: 0.4rem;
+        transition: background 0.3s;
+      }
+
+      .navbar-nav .nav-link:hover {
+        background-color: rgba(217, 83, 79, 0.1);
+      }
+
+      .dropdown-menu {
+        position: relative !important;
+        transform: none !important;
+        margin-top: 0.5rem;
+        box-shadow: none;
+      }
+
+      .dropdown-item {
+        padding: 10px 15px;
+        border-bottom: 1px solid #f1f1f1;
+      }
+
+      .dropdown-item:last-child {
+        border-bottom: none;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .navbar-contact {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/ICONO.png" alt="Logo">
+      </a>
+
+      <!-- Botón responsive personalizado -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <i class="fas fa-bars fa-lg text-secondary"></i>
+      </button>
+
+      <!-- Menú -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="productos-categoria.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="fabrica.html">Fábrica</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Clubes</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="club-instalador.html">🔧 Club del Instalador</a></li>
+              <li><a class="dropdown-item" href="club-carpintero.html">🪚 Club del Carpintero</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contactos.html">Contactos</a></li>
+        </ul>
+      </div>
+
+      <!-- Contacto -->
+      <div class="navbar-contact d-none d-lg-block">
+        <i class="fas fa-phone-alt"></i> (591-3) 342 0345
+      </div>
+    </div>
+  </nav>
+
+  <!-- Espacio para compensar nav fijo -->
+  <div style="height: 90px;"></div>
+<!-- Carrusel de imágenes -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/2-Lider.jpg" class="d-block w-100" alt="Banner 1">
+      </div>
+      <div class="carousel-item">
+        <img src="images/3-Cons.jpg" class="d-block w-100" alt="Banner 2">
+      </div>
+      <div class="carousel-item">
+        <img src="images/2-Lider.jpg" class="d-block w-100" alt="Banner 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+  
+  <!-- Activar carrusel manualmente por JS por si no lo toma automáticamente -->
+  <script>
+    const myCarousel = document.querySelector('#carouselExampleIndicators');
+    const carousel = new bootstrap.Carousel(myCarousel, {
+      interval: 2000,
+      ride: 'carousel'
+    });
+  </script>
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+   
+  <!-- Contenido -->
+  <main class="container py-5">
+    <h1>Bienvenido</h1>
+    <p>Explora nuestro contenido.</p>
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contactos - Synergy</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Course Project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+    <link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+    <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="images/ICONOS(1).png" type="image/x-icon">
+    <style>
+      .main_nav_item a {
+        position: relative;
+        display: inline-block;
+        padding: 8px 10px;
+        font-weight: 500;
+        color: #000;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      
+      .main_nav_item a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0%;
+        height: 2px;
+        background-color: #000000; /* Rojo estilo cargado */
+        transition: width 0.4s ease;
+      }
+      
+      .main_nav_item a:hover::after {
+        width: 100%;
+      }
+      
+      .main_nav_item a:hover {
+        color: #000000; /* También puedes mantenerlo en negro si prefieres */
+      }
+      </style>
+    <style>
+        
+       .elegant-title {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.5); /* Fondo negro con transparencia */
+    padding: 20px 40px;
+    border-radius: 15px;
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    backdrop-filter: blur(4px);
+    animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+         /* Estilo para el contenedor con fondo de imagen */
+    .background-container {
+        background-image: url('images/Contacto-2.jpg'); /* Cambia la URL de la imagen según la que quieras usar */
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 200px 0;
+        text-align: center;
+    }
+
+    .background-container h1 {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    /* Estilo para los cuadros con imágenes */
+    .image-gallery {
+        display: flex;
+        justify-content: space-between; /* Asegura que las imágenes estén más juntas */
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    .image-gallery .image-box {
+        width: 30%; /* Aumentar el tamaño de las imágenes */
+        margin: 0 5px; /* Reducir espacio entre las imágenes */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .image-gallery .image-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .image-gallery .image-box:hover img {
+        transform: scale(1.1);
+    }
+
+    @media (max-width: 767px) {
+        .navbar a {
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .background-container h1 {
+            font-size: 2rem;
+        }
+
+        .image-gallery .image-box {
+            width: 45%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .image-gallery .image-box {
+            width: 100%;
+        }
+    }
+
+
+    
+
+    </style>
+
+
+
+</head>
+<body>
+	<!-- Header -->
+	<!-- Header -->
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<header class="fixed top-0 left-0 w-full bg-white z-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-center justify-between h-[90px]">
+
+      <!-- LOGO (SIEMPRE IZQUIERDA) -->
+      <div class="flex items-center">
+        <img
+          src="images/1-LogoNeg.png"
+          alt="Synergy"
+          class="h-[60px] w-auto"
+        />
+      </div>
+
+      <!-- NAV DESKTOP -->
+      <nav class="hidden md:flex items-center gap-6">
+
+        <!-- MENU -->
+        <ul class="flex items-center gap-4 text-sm font-medium text-black">
+  <li>
+    <a href="index.html" class="nav-link">INICIO</a>
+  </li>
+  <li>
+    <a href="nosotros.html" class="nav-link">NOSOTROS</a>
+  </li>
+  <li>
+    <a href="productos-categoria.html" class="nav-link">PRODUCTOS</a>
+  </li>
+
+  <li>
+    <a href="clubes.html" class="nav-link">CLUBES</a>
+  </li>
+  <li>
+    <a href="contactos.html" class="nav-link">CONTACTOS</a>
+  </li>
+</ul>
+
+
+        <!-- REDES SOCIALES -->
+         <div class="flex items-center gap-2 ml-6">
+          <a href="https://www.facebook.com/SynergyBolivia" class="social-icon">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/synergybolivia/" class="social-icon">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/@synergybolivia4431" class="social-icon">
+            <i class="bi bi-youtube"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/synergybolivia/" class="social-icon">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://wa.me/59169252476" class="social-icon">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+
+      </nav>
+
+      <!-- HAMBURGER MOBILE -->
+      <!-- Hamburger -->
+<div
+  class="hamburger_container md:hidden
+         flex items-center justify-center
+         w-10 h-10
+         rounded-md
+         cursor-pointer
+         text-black
+         hover:bg-gray-100
+         transition"
+>
+  <i class="fas fa-bars text-xl"></i>
+</div>
+
+
+    </div>
+    
+  </div>
+  
+</header>
+<style>
+  .social-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 9999px;
+    border: 1.5px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    transition: all 0.25s ease;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .social-icon:hover {
+    background: #000;
+    color: #fff;
+    transform: translateY(-2px);
+  }
+
+  body {
+    padding-top: 10px; /* para que el header fijo no tape contenido */
+  }
+  .nav-link {
+  position: relative;
+  padding: 6px 4px;
+  color: #000;
+  text-decoration: none;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.35s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+.nav-link.active::after {
+  width: 100%;
+}
+
+</style>
+
+  <!-- Mobile Menu -->
+  
+	<!-- Menu -->
+	<!-- Menu -->
+	<!-- Menú Móvil -->
+<div class="mobile_menu d-md-none" style="display: none;">
+	<ul class="mobile_menu_list">
+	  <li class="mobile_menu_item"><a href="index.html">INICIO</a></li>
+	  <li class="mobile_menu_item"><a href="nosotros.html">NOSOTROS</a></li>
+	  <li class="mobile_menu_item"><a href="productos-categoria.html">PRODUCTOS</a></li>
+	
+  
+	  <!-- Clubes con submenú -->
+	  <li class="mobile_menu_item"><a href="clubes.html">CLUBES</a></li>
+  
+	  <li class="mobile_menu_item"><a href="contactos.html">CONTACTOS</a></li>
+	</ul>
+  </div>
+  
+  <!-- Estilos -->
+  <style>
+	.mobile_menu {
+  background-color: #ffffff;
+  padding: 15px;
+  position: fixed;
+  top: 65px;   /* 🔥 ANTES 60px */
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+  
+	.mobile_menu_list {
+	  list-style: none;
+	  padding-left: 0;
+	  margin: 0;
+	}
+  
+	.mobile_menu_list a {
+	  color: #070707;
+	  font-weight: 500;
+	  text-decoration: none;
+	}
+  
+	.mobile_menu_list a:hover {
+	  color: #ff5252;
+	}
+  
+	.mobile_menu_item {
+	  margin: 10px 0;
+	  padding-left: 20px;
+	}
+  
+	.submenu {
+	  display: none;
+	  padding-left: 20px;
+	  margin-top: 5px;
+	}
+  
+	.submenu-toggle {
+	  cursor: pointer;
+	  transition: color 0.3s ease;
+	}
+  
+	.submenu-toggle:hover {
+	  color: #ffcc00;
+	}
+  
+	.submenu.show {
+	  display: block;
+	}
+  </style>
+  
+  <!-- Script -->
+  <script>
+	document.addEventListener('DOMContentLoaded', function () {
+	  // Mostrar/Ocultar el menú móvil
+	  document.querySelector('.hamburger_container')?.addEventListener('click', function () {
+		const mobileMenu = document.querySelector('.mobile_menu');
+		mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
+	  });
+  
+	  // Mostrar/Ocultar submenús
+	  document.querySelectorAll('.submenu-toggle').forEach(function (toggle) {
+		toggle.addEventListener('click', function (e) {
+		  e.preventDefault();
+		  const submenu = this.nextElementSibling;
+		  submenu.classList.toggle('show');
+		});
+	  });
+	});
+  </script>
+  
+
+
+
+<section class="w-full bg-white pt-14 pb-10">
+
+    <!-- HERO HORIZONTAL -->
+    <div
+        class="flex flex-col md:flex-row gap-4
+               w-full max-w-7xl mx-auto
+               min-h-[350px] md:min-h-[85vh]
+
+               px-4 md:px-6
+               mt-4">
+
+        <!-- Card -->
+        <div
+           class="relative flex-1 md:hover:flex-[8]
+                  transition-all duration-500
+                  rounded-2xl overflow-hidden shadow-xl
+                  min-h-[220px] md:min-h-full">
+
+            <img src="IMAGENES/CONTACTO/2-Con.jpg" class="w-full h-full object-cover">
+
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- Estilos CSS -->
+<style>
+	
+/* Overlay para mejorar contraste */
+.hero_slide_background .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.35); /* negro semi-transparente */
+    border-radius: inherit; /* si tienes bordes redondeados */
+}
+
+.hero_slide_background {
+    min-height: 600px;
+    height: 100vh;
+}
+
+
+.hero_slide_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    max-width: 90%;
+}
+
+.hero_slide_content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    margin-bottom: 0.5rem;
+}
+
+.hero_slide_content h2 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 8px rgba(0,0,0,0.5);
+    margin-bottom: 1rem;
+}
+
+.hero_slide_content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+}
+
+/*COLOR Y ESTILO PARA BOTON*/
+.hero_btn { 
+    padding: 12px 35px; 
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    background: transparent; 
+    border: 2px solid white; 
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero_btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.15); /* brillo suave */
+    transition: all 0.4s ease;
+    border-radius: 50px;
+}
+
+.hero_btn:hover {
+    color: #e7e8e9; /* azul brillante */
+    border-color: #565a5c; /* borde azul */
+}
+
+.hero_btn:hover::before {
+    left: 0;
+}
+
+
+/* Navegación */
+.hero_slider_nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.hero_slider_left {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero_slider_right {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider_btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.slider_btn:hover {
+    transform: scale(1.2);
+}
+
+.hero_slider_nav:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero_slide_content h1 { font-size: 2.5rem; }
+    .hero_slide_content h2 { font-size: 1.8rem; }
+    .hero_slide_content p { font-size: 1rem; }
+    .hero_btn { font-size: 1rem; padding: 10px 25px; }
+}
+</style>
+
+
+<section class="bg-white py-20">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- TÍTULO -->
+    <h2 class="text-center text-2xl md:text-3xl font-bold tracking-wide mb-12">
+      NUESTRAS OFICINAS
+    </h2>
+
+    <!-- BOTONES -->
+    <div class="flex flex-wrap justify-center gap-4 mb-16">
+      <button class="btn-ciudad active" onclick="filtrarCiudad('sc', this)">Santa Cruz</button>
+      <button class="btn-ciudad" onclick="filtrarCiudad('cbba', this)">Cochabamba</button>
+      <button class="btn-ciudad" onclick="filtrarCiudad('lp', this)">La Paz</button>
+      <button class="btn-ciudad" onclick="filtrarCiudad('ea', this)">El Alto</button>
+      <button class="btn-ciudad" onclick="filtrarCiudad('tj', this)">Tarija</button>
+    </div>
+
+    <div class="max-w-4xl mx-auto">
+
+      <!-- ================= SANTA CRUZ ================= -->
+      <div class="ciudad sc">
+
+        <!-- OFICINA CENTRAL -->
+        <div class="py-6 border-b">
+          <h3 class="font-bold uppercase text-sm mb-1">
+            Oficina Central
+          </h3>
+
+          <p class="text-sm text-gray-700 mb-2">
+            3° anillo interno N° 3275 entre Av. Alemana y Av. Mutualista
+          </p>
+
+          <!-- BADGES NEGROS -->
+          <div class="flex flex-wrap gap-2 mb-3">
+            <span class="badge-negro">Construcción en seco</span>
+            <span class="badge-negro">Tableros de madera</span>
+          </div>
+
+          <!-- UBICACIÓN -->
+          <a href="https://maps.app.goo.gl/uY3wnVwL2CgPurcb7"
+             target="_blank"
+             class="badge-ubicacion">
+             Ver ubicación
+          </a>
+        </div>
+
+        <!-- SANTOS DUMONT -->
+        <div class="py-6 border-b">
+          <h3 class="font-bold uppercase text-sm mb-1">
+            Sucursal Santos Dumont
+          </h3>
+
+          <p class="text-sm text-gray-700 mb-2">
+            Av. Santos Dumont entre 4° y 5° anillo (frente a Villa Olímpica)
+          </p>
+
+          <div class="flex flex-wrap gap-2 mb-3">
+            <span class="badge-negro">Construcción en seco</span>
+            <span class="badge-negro">Tableros de madera</span>
+          </div>
+
+          <a href="https://maps.app.goo.gl/VytmxsZNi17rh6HaA"
+             target="_blank"
+             class="badge-ubicacion">
+             Ver ubicación
+          </a>
+        </div>
+        <!-- MONTERO -->
+        <div class="py-6">
+          <h3 class="font-bold uppercase text-sm mb-1">
+            Sucursal Radial 17 ½
+          </h3>
+
+          <p class="text-sm text-gray-700 mb-2">
+            4to anillo 2 cuadras antes de Av. Radial 17 ½
+          </p>
+
+          <div class="flex flex-wrap gap-2 mb-3">
+            <span class="badge-negro">Construcción en seco</span>
+          </div>
+
+          <a href="https://maps.app.goo.gl/QdTteqxLrBjgAHsbA"
+             target="_blank"
+             class="badge-ubicacion">
+             Ver ubicación
+          </a>
+        </div>
+
+        <!-- MONTERO -->
+        <div class="py-6">
+          <h3 class="font-bold uppercase text-sm mb-1">
+            Sucursal Montero
+          </h3>
+
+          <p class="text-sm text-gray-700 mb-2">
+            Circunvalación Este – Calle Luis Gius
+          </p>
+
+          <div class="flex flex-wrap gap-2 mb-3">
+            <span class="badge-negro">Construcción en seco</span>
+          </div>
+
+          <a href="https://maps.app.goo.gl/zDw89nG2PU2cRRf18"
+             target="_blank"
+             class="badge-ubicacion">
+             Ver ubicación
+          </a>
+        </div>
+
+      </div>
+
+      <!-- ================= CBBA ================= -->
+      <div class="ciudad cbba hidden">
+        <div class="py-6">
+          <h3 class="font-bold uppercase text-sm mb-1">
+            Oficina Central
+          </h3>
+
+          <p class="text-sm text-gray-700 mb-2">
+            Av. Villazón Km 2½ – Acera Sur (Carretera A Sacaba)
+          </p>
+
+          <div class="flex flex-wrap gap-2 mb-3">
+            <span class="badge-negro">Construcción en seco</span>
+            <span class="badge-negro">Tableros de madera</span>
+          </div>
+
+          <a href="https://maps.app.goo.gl/88osYi5FQUkT2iDw8"
+             target="_blank"
+             class="badge-ubicacion">
+             Ver ubicación
+          </a>
+        </div>
+
+        <div class="py-6">
+          <h3 class="font-bold uppercase text-sm mb-1">
+            Sucursal Beijing I
+          </h3>
+
+          <p class="text-sm text-gray-700 mb-2">
+            Av. Beijing N° 115 entre C. 23 de Enero y Yuracaré
+          </p>
+
+          <div class="flex flex-wrap gap-2 mb-3">
+            <span class="badge-negro">Construcción en seco</span>
+            
+          </div>
+
+          <a href="https://maps.app.goo.gl/inWuDXok8JBXUh4M8"
+             target="_blank"
+             class="badge-ubicacion">
+             Ver ubicación
+          </a>
+        </div>
+
+        <div class="py-6">
+          <h3 class="font-bold uppercase text-sm mb-1">
+            Sucursal Beijing II
+          </h3>
+
+          <p class="text-sm text-gray-700 mb-2">
+            Av. Beijing casi Simón López, entre C. Chimpu Ojllo y Kusi Chimpu, acera Oeste
+          </p>
+
+          <div class="flex flex-wrap gap-2 mb-3">
+            <span class="badge-negro">Construcción en seco</span>
+            
+          </div>
+
+          <a href="https://maps.app.goo.gl/639chzrsB6j7Qo5e8?g_st=iw"
+             target="_blank"
+             class="badge-ubicacion">
+             Ver ubicación
+          </a>
+        </div>
+
+      </div>
+       <!-- ================= LA PAZ ================= -->
+      <div class="ciudad lp hidden">
+        <div class="py-6">
+          <h3 class="font-bold uppercase text-sm mb-1">
+            Oficina Central
+          </h3>
+
+          <p class="text-sm text-gray-700 mb-2">
+            C. 25 de Calacoto, esq. Ballivian (a lado de las canchas ABB) #22
+          </p>
+
+          <div class="flex flex-wrap gap-2 mb-3">
+            <span class="badge-negro">Construcción en seco</span>
+            <span class="badge-negro">Tableros de madera</span>
+          </div>
+
+          <a href="https://maps.app.goo.gl/a3VLAkhBhqUdTGwh7"
+             target="_blank"
+             class="badge-ubicacion">
+             Ver ubicación
+          </a>
+        </div>
+      </div>
+       <!-- ================= EL ALTO ================= -->
+      <div class="ciudad ea hidden">
+        <div class="py-6">
+          <h3 class="font-bold uppercase text-sm mb-1">
+            Sucursal Rio Seco
+          </h3>
+
+          <p class="text-sm text-gray-700 mb-2">
+            Av. Juan Pablo II N° 100 galpon 8 y 9
+          </p>
+
+          <div class="flex flex-wrap gap-2 mb-3">
+            <span class="badge-negro">Construcción en seco</span>
+            <span class="badge-negro">Tableros de madera</span>
+          </div>
+
+          <a href="https://maps.app.goo.gl/TMbJwoSgaFp36RZs8"
+             target="_blank"
+             class="badge-ubicacion">
+             Ver ubicación
+          </a>
+        </div>
+        <div class="py-6">
+          <h3 class="font-bold uppercase text-sm mb-1">
+            Sucursal Villa Abaroa
+          </h3>
+
+          <p class="text-sm text-gray-700 mb-2">
+            Av. Ladislao Cabrera N° 100
+          </p>
+
+          <div class="flex flex-wrap gap-2 mb-3">
+            <span class="badge-negro">Construcción en seco</span>
+            <span class="badge-negro">Tableros de madera</span>
+          </div>
+
+          <a href="https://maps.app.goo.gl/JWrxdVrMptqnzMMd7"
+             target="_blank"
+             class="badge-ubicacion">
+             Ver ubicación
+          </a>
+        </div>
+      </div>
+       <!-- ================= TARIJA ================= -->
+      <div class="ciudad tj hidden">
+        <div class="py-6">
+          <h3 class="font-bold uppercase text-sm mb-1">
+            Oficina Central
+          </h3>
+
+          <p class="text-sm text-gray-700 mb-2">
+            Prolongacion Ballivian y Av. Circunvalación (Frente a Cadepia)
+          </p>
+
+          <div class="flex flex-wrap gap-2 mb-3">
+            <span class="badge-negro">Construcción en seco</span>
+            <span class="badge-negro">Tableros de madera</span>
+          </div>
+
+          <a href="https://maps.app.goo.gl/8zcmRbiKSiEVugXM9"
+             target="_blank"
+             class="badge-ubicacion">
+             Ver ubicación
+          </a>
+        </div>
+        
+      </div>
+
+
+    </div>
+  </div>
+</section>
+<style>
+/* BOTONES DEPARTAMENTO */
+.btn-ciudad{
+  border:1px solid #000;
+  padding:10px 28px;
+  font-weight:600;
+  transition:.3s;
+  background:#fff;
+}
+
+.btn-ciudad:hover,
+.btn-ciudad.active{
+  background:#000;
+  color:#fff;
+}
+
+/* BADGE NEGRO */
+.badge-negro{
+  background:#000;
+  color:#fff;
+  padding:6px 12px;
+  font-size:12px;
+  font-weight:600;
+  text-transform:uppercase;
+}
+
+/* UBICACIÓN */
+.badge-ubicacion{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  padding:8px 14px;
+  border:1px solid #000;
+  font-size:13px;
+  font-weight:600;
+  color:#000;
+  background:#fff;
+  transition:.3s;
+}
+
+.badge-ubicacion:hover{
+  background:#000;
+  color:#fff;
+}
+</style>
+<script>
+function filtrarCiudad(ciudad, btn){
+  document.querySelectorAll('.ciudad')
+    .forEach(c => c.classList.add('hidden'));
+
+  document.querySelector('.' + ciudad)
+    .classList.remove('hidden');
+
+  document.querySelectorAll('.btn-ciudad')
+    .forEach(b => b.classList.remove('active'));
+
+  btn.classList.add('active');
+}
+</script>
+
+
+
+
+<!-- ===================================== -->
+<!-- ICONO FLOTANTE SYNEREX -->
+<!-- ===================================== -->
+
+<a href="https://synerex.com.bo/"
+   target="_blank"
+   class="synerex-float">
+
+    <!-- TEXTO CIRCULAR -->
+    <svg class="circular-text" viewBox="0 0 100 100">
+
+        <defs>
+            <path id="circlePath"
+                  d="M 50,50
+                     m -38,0
+                     a 38,38 0 1,1 76,0
+                     a 38,38 0 1,1 -76,0"/>
+        </defs>
+
+        <text>
+            <textPath href="#circlePath">
+                • CONSTRUCCIÓN DE PROYECTOS •
+            </textPath>
+        </text>
+
+    </svg>
+
+    <!-- LOGO -->
+    <img src="IMAGENES/SYNEREX/isologitipo_syx-azul.png"
+         alt="Synerex"
+         class="synerex-logo">
+
+</a>
+
+<!-- ESTILOS -->
+<style>
+
+.synerex-float{
+
+    position: fixed;
+
+    right: 22px;
+    bottom: 22px;
+
+    z-index: 9999;
+
+    width: 88px;
+    height: 88px;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    box-shadow:
+      0 10px 30px rgba(0,0,0,.18);
+
+    transition: all .35s ease;
+
+    overflow: hidden;
+}
+
+/* HOVER */
+.synerex-float:hover{
+
+    transform: translateY(-6px) scale(1.05);
+
+    box-shadow:
+      0 16px 38px rgba(0,0,0,.25);
+}
+
+/* LOGO */
+.synerex-logo{
+
+    width: 42px;
+    height: 42px;
+
+    object-fit: contain;
+
+    position: relative;
+
+    z-index: 3;
+
+    transition: transform .35s ease;
+}
+
+.synerex-float:hover .synerex-logo{
+
+    transform: scale(1.08);
+}
+
+/* TEXTO CIRCULAR */
+.circular-text{
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    animation: rotateText 12s linear infinite;
+}
+
+.circular-text text{
+
+    fill: #0b2d5c;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+/* ROTACIÓN */
+@keyframes rotateText{
+
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+
+}
+
+/* EFECTO PULSO */
+.synerex-float::before{
+
+    content: "";
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+
+    border: 2px solid rgba(11,45,92,.20);
+
+    animation: synerexPulse 2s infinite;
+}
+
+@keyframes synerexPulse{
+
+    0%{
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    100%{
+      transform: scale(1.35);
+      opacity: 0;
+    }
+
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    .synerex-float{
+
+        width: 72px;
+        height: 72px;
+
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .synerex-logo{
+
+        width: 34px;
+        height: 34px;
+    }
+
+    .circular-text text{
+
+        font-size: 6px;
+    }
+
+}
+
+</style>
+
+
+
+ 
+	
+<footer class="bg-black text-gray-400 text-sm py-6">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- EMPRESA -->
+      <div>
+        <h3 class="text-white font-semibold mb-2 uppercase text-xs tracking-wider">
+          SOCIEDAD SYNERGY LTDA.
+        </h3>
+        <p class="leading-snug max-w-sm">
+          Soluciones constructivas para construcción en seco y tableros de madera.
+        </p>
+      </div>
+
+      <!-- NAVEGACIÓN -->
+      <div>
+        <h3 class="text-white font-semibold mb-2 uppercase text-xs tracking-wider">
+          Navegación
+        </h3>
+        <ul class="space-y-1">
+          <li><a href="index.html" class="hover:text-white transition">Inicio</a></li>
+          <li><a href="nosotros.html" class="hover:text-white transition">Nosotros</a></li>
+          <li><a href="productos-categoria.html" class="hover:text-white transition">Productos</a></li>
+          
+           <li><a href="clubes.html" class="hover:text-white transition">Clubes</a></li>
+            <li><a href="contactos.html" class="hover:text-white transition">Contactos</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACTO -->
+     <div>
+  <h3 class="text-white font-semibold mb-2 uppercase text-xs tracking-wider">
+    Contacto
+  </h3>
+
+  <p class="text-gray-400 leading-snug mb-3 max-w-xs">
+    Atención personalizada y asesoramiento técnico.
+    Contáctenos directamente vía WhatsApp.
+  </p>
+
+  <a
+    href="https://wa.me/59169252476"
+    target="_blank"
+    class="inline-flex items-center gap-2
+           border border-gray-600
+           px-4 py-1.5
+           text-xs font-semibold text-white
+           hover:text-green-400 hover:border-green-400
+           transition-colors duration-300"
+  >
+    <!-- Ícono WhatsApp -->
+    <svg xmlns="http://www.w3.org/2000/svg"
+         class="w-4 h-4 transition-colors duration-300"
+         fill="currentColor"
+         viewBox="0 0 24 24">
+      <path
+        d="M12.04 2C6.56 2 2.09 6.47 2.09 11.95c0 2.11.55 4.16 1.6 5.96L2 22l4.24-1.58a9.89 9.89 0 0 0 4.8 1.23h.01c5.48 0 9.95-4.47 9.95-9.95C20.99 6.47 17.52 2 12.04 2z"
+      />
+    </svg>
+
+    Escríbanos por WhatsApp
+  </a>
+</div>
+
+
+    </div>
+
+    <!-- LÍNEA INFERIOR -->
+    <div class="border-t border-gray-800 mt-6 pt-3 text-center text-[11px] text-gray-500">
+      © <script>document.write(new Date().getFullYear())</script> Sociedad Synergy Ltda.
+    </div>
+
+  </div>
+</footer>
+
+<script>
+/* 🚫 Bloquear clic derecho */
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+
+/* 🚫 Bloquear teclas comunes de inspección */
+document.addEventListener('keydown', function(e) {
+
+    // F12
+    if (e.key === "F12") {
+        e.preventDefault();
+    }
+
+    // Ctrl + Shift + I / J / C
+    if (e.ctrlKey && e.shiftKey && (
+        e.key === "I" || e.key === "i" ||
+        e.key === "J" || e.key === "j" ||
+        e.key === "C" || e.key === "c"
+    )) {
+        e.preventDefault();
+    }
+
+    // Ctrl + U (ver código fuente)
+    if (e.ctrlKey && (e.key === "U" || e.key === "u")) {
+        e.preventDefault();
+    }
+
+    // Ctrl + S (guardar página)
+    if (e.ctrlKey && (e.key === "S" || e.key === "s")) {
+        e.preventDefault();
+    }
+});
+
+/* 🚫 Bloquear selección de texto */
+document.addEventListener('selectstart', function(e) {
+    e.preventDefault();
+});
+
+/* 🚫 Bloquear copiar */
+document.addEventListener('copy', function(e) {
+    e.preventDefault();
+});
+
+/* 🚫 Detectar DevTools */
+setInterval(function() {
+    if (window.outerWidth - window.innerWidth > 150 || 
+        window.outerHeight - window.innerHeight > 150) {
+        document.body.innerHTML = "<h1 style='color:red;text-align:center;'>Acceso no permitido</h1>";
+    }
+}, 1000);
+</script>
+
+
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</html>

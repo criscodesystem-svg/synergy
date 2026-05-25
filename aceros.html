@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Aceros - Synergy</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Course Project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="icon" href="images/ICONOS(1).png" type="image/x-icon">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<style>
+	.main_nav_item a {
+	  position: relative;
+	  display: inline-block;
+	  padding: 8px 10px;
+	  font-weight: 500;
+	  color: #000;
+	  text-decoration: none;
+	  transition: color 0.3s ease;
+	}
+  
+	.main_nav_item a::after {
+	  content: "";
+	  position: absolute;
+	  left: 0;
+	  bottom: 0;
+	  width: 0%;
+	  height: 2px;
+	  background-color: #000000; /* Rojo estilo cargado */
+	  transition: width 0.4s ease;
+	}
+  
+	.main_nav_item a:hover::after {
+	  width: 100%;
+	}
+  
+	.main_nav_item a:hover {
+	  color: #000000; /* También puedes mantenerlo en negro si prefieres */
+	}
+  </style>
+
+
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+	<!-- Header -->
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<header class="fixed top-0 left-0 w-full bg-white z-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-center justify-between h-[90px]">
+
+      <!-- LOGO (SIEMPRE IZQUIERDA) -->
+      <div class="flex items-center">
+        <img
+          src="images/1-LogoNeg.png"
+          alt="Synergy"
+          class="h-[60px] w-auto"
+        />
+      </div>
+
+      <!-- NAV DESKTOP -->
+      <nav class="hidden md:flex items-center gap-6">
+
+        <!-- MENU -->
+        <ul class="flex items-center gap-4 text-sm font-medium text-black">
+  <li>
+    <a href="index.html" class="nav-link">INICIO</a>
+  </li>
+  <li>
+    <a href="nosotros.html" class="nav-link">NOSOTROS</a>
+  </li>
+  <li>
+    <a href="productos-categoria.html" class="nav-link">PRODUCTOS</a>
+  </li>
+  <li>
+    <a href="aceros.html" class="nav-link">ACEROS</a>
+  </li>
+  <li>
+    <a href="clubes.html" class="nav-link">CLUBES</a>
+  </li>
+  <li>
+    <a href="contactos.html" class="nav-link">CONTACTOS</a>
+  </li>
+</ul>
+
+
+        <!-- REDES SOCIALES -->
+         <div class="flex items-center gap-2 ml-6">
+          <a href="https://www.facebook.com/SynergyBolivia" class="social-icon">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/synergybolivia/" class="social-icon">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/@synergybolivia4431" class="social-icon">
+            <i class="bi bi-youtube"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/synergybolivia/" class="social-icon">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://wa.me/59169252476" class="social-icon">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+
+      </nav>
+
+      <!-- HAMBURGER MOBILE -->
+      <!-- Hamburger -->
+<div
+  class="hamburger_container md:hidden
+         flex items-center justify-center
+         w-10 h-10
+         rounded-md
+         cursor-pointer
+         text-black
+         hover:bg-gray-100
+         transition"
+>
+  <i class="fas fa-bars text-xl"></i>
+</div>
+
+
+    </div>
+    
+  </div>
+  
+</header>
+<style>
+  .social-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 9999px;
+    border: 1.5px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    transition: all 0.25s ease;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .social-icon:hover {
+    background: #000;
+    color: #fff;
+    transform: translateY(-2px);
+  }
+
+  body {
+    padding-top: 10px; /* para que el header fijo no tape contenido */
+  }
+  .nav-link {
+  position: relative;
+  padding: 6px 4px;
+  color: #000;
+  text-decoration: none;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.35s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+.nav-link.active::after {
+  width: 100%;
+}
+
+</style>
+
+  <!-- Mobile Menu -->
+  
+	<!-- Menu -->
+	<!-- Menu -->
+	<!-- Menú Móvil -->
+<div class="mobile_menu d-md-none" style="display: none;">
+	<ul class="mobile_menu_list">
+	  <li class="mobile_menu_item"><a href="index.html">INICIO</a></li>
+	  <li class="mobile_menu_item"><a href="nosotros.html">NOSOTROS</a></li>
+	  <li class="mobile_menu_item"><a href="productos-categoria.html">PRODUCTOS</a></li>
+	  <li class="mobile_menu_item"><a href="aceros.html">ACEROS</a></li>
+  
+	  <!-- Clubes con submenú -->
+	  <li class="mobile_menu_item"><a href="clubes.html">CLUBES</a></li>
+  
+	  <li class="mobile_menu_item"><a href="contactos.html">CONTACTOS</a></li>
+	</ul>
+  </div>
+  
+  <!-- Estilos -->
+  <style>
+	.mobile_menu {
+  background-color: #ffffff;
+  padding: 15px;
+  position: fixed;
+  top: 65px;   /* 🔥 ANTES 60px */
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+  
+	.mobile_menu_list {
+	  list-style: none;
+	  padding-left: 0;
+	  margin: 0;
+	}
+  
+	.mobile_menu_list a {
+	  color: #070707;
+	  font-weight: 500;
+	  text-decoration: none;
+	}
+  
+	.mobile_menu_list a:hover {
+	  color: #ff5252;
+	}
+  
+	.mobile_menu_item {
+	  margin: 10px 0;
+	  padding-left: 20px;
+	}
+  
+	.submenu {
+	  display: none;
+	  padding-left: 20px;
+	  margin-top: 5px;
+	}
+  
+	.submenu-toggle {
+	  cursor: pointer;
+	  transition: color 0.3s ease;
+	}
+  
+	.submenu-toggle:hover {
+	  color: #ffcc00;
+	}
+  
+	.submenu.show {
+	  display: block;
+	}
+  </style>
+  
+  <!-- Script -->
+  <script>
+	document.addEventListener('DOMContentLoaded', function () {
+	  // Mostrar/Ocultar el menú móvil
+	  document.querySelector('.hamburger_container')?.addEventListener('click', function () {
+		const mobileMenu = document.querySelector('.mobile_menu');
+		mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
+	  });
+  
+	  // Mostrar/Ocultar submenús
+	  document.querySelectorAll('.submenu-toggle').forEach(function (toggle) {
+		toggle.addEventListener('click', function (e) {
+		  e.preventDefault();
+		  const submenu = this.nextElementSibling;
+		  submenu.classList.toggle('show');
+		});
+	  });
+	});
+  </script>
+
+	<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<section class="w-full bg-white pt-14 pb-10">
+
+    <!-- HERO HORIZONTAL -->
+    <div
+        class="flex flex-col md:flex-row gap-4
+               w-full max-w-7xl mx-auto
+               min-h-[350px] md:min-h-[85vh]
+
+               px-4 md:px-6
+               mt-4">
+
+        <!-- Card -->
+        <a href="nosotros.html"
+           class="relative flex-1 md:hover:flex-[8]
+                  transition-all duration-500
+                  rounded-2xl overflow-hidden shadow-xl
+                  min-h-[220px] md:min-h-full">
+
+            <img src="IMAGENES/ACEROS/1-Ace.jpg" class="w-full h-full object-cover">
+
+            <div class="absolute inset-0 bg-black/50 flex flex-col justify-end p-6 md:p-8">
+                <h2 class="text-white text-2xl md:text-3xl font-bold">
+                    PERFILES DE
+                </h2>
+                <p class="text-white text-sm md:text-base mt-2">
+                    Acero galvanizado
+                </p>
+            </div>
+        </a>
+
+         <a href="nosotros.html"
+           class="relative flex-1 md:hover:flex-[8]
+                  transition-all duration-500
+                  rounded-2xl overflow-hidden shadow-xl
+                  min-h-[220px] md:min-h-full">
+
+            <img src="IMAGENES/ACEROS/2-Ace.jpg" class="w-full h-full object-cover">
+
+            <div class="absolute inset-0 bg-black/50 flex flex-col justify-end p-6 md:p-8">
+                <h2 class="text-white text-2xl md:text-3xl font-bold">
+                    AMPLIA
+                </h2>
+                <p class="text-white text-sm md:text-base mt-2">
+                    Gama de perfiles
+                </p>
+            </div>
+        </a>
+         <a href="nosotros.html"
+           class="relative flex-1 md:hover:flex-[8]
+                  transition-all duration-500
+                  rounded-2xl overflow-hidden shadow-xl
+                  min-h-[220px] md:min-h-full">
+
+            <img src="IMAGENES/ACEROS/3-Ace.jpg" class="w-full h-full object-cover">
+
+            <div class="absolute inset-0 bg-black/50 flex flex-col justify-end p-6 md:p-8">
+                <h2 class="text-white text-2xl md:text-3xl font-bold">
+                    PRODUCE
+                </h2>
+                <p class="text-white text-sm md:text-base mt-2">
+                    Sistemas, cubiertas
+
+                </p>
+            </div>
+        </a>
+         <a href="nosotros.html"
+           class="relative flex-1 md:hover:flex-[8]
+                  transition-all duration-500
+                  rounded-2xl overflow-hidden shadow-xl
+                  min-h-[220px] md:min-h-full">
+
+            <img src="IMAGENES/ACEROS/4-Ace.jpg" class="w-full h-full object-cover">
+
+            <div class="absolute inset-0 bg-black/50 flex flex-col justify-end p-6 md:p-8">
+                <h2 class="text-white text-2xl md:text-3xl font-bold">
+                    HOMOLOGADA
+                </h2>
+                <p class="text-white text-sm md:text-base mt-2">
+                    Y Certificada ISO 9001:2015
+                </p>
+            </div>
+        </a>
+        
+       
+
+    </div>
+</section>
+
+
+
+    
+<section class="bg-gray-200 py-6">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-6 px-6">
+
+    <!-- LOGO A LA IZQUIERDA -->
+   <div class="flex-shrink-0 flex justify-center md:justify-start md:ml-14">
+      <img src="images/Aceros_Mesa de trabajo 1 copia.png"
+           alt="Synergy Aceros"
+           class="w-40 md:w-[220px]">
+    </div>
+
+    <!-- TEXTO CENTRADO VERTICALMENTE -->
+    <div class="flex items-center justify-center gap-4 flex-1 text-center md:text-left">
+
+      <!-- COMILLAS -->
+      <div class="text-5xl md:text-7xl font-black leading-none text-black">
+        “
+      </div>
+
+      <!-- TEXTO -->
+      <h2 class="text-black font-bold uppercase text-lg md:text-2xl lg:text-3xl leading-snug">
+        SOMOS LOS PRIMEROS EN CERTIFICAR <br>
+        NUESTROS PROCESOS DE PRODUCCIÓN <br>
+        DE PERFILES DE ACERO GALVANIZADO
+      </h2>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="bg-white py-16">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+    <!-- TEXTO -->
+    <div>
+     
+
+      <p class="text-gray-700 mb-4 leading-relaxed">
+        Synergy Aceros produce una amplia variedad de perfiles de
+		acero galvanizado de diferentes geometrías, espesores,
+		tamaños y longitudes. mediante un proceso de conformado
+		en frío (Cold Steel Roll Forming).
+      </p>
+
+      <p class="text-gray-700 mb-4 leading-relaxed">
+       	Las diferentes líneas de producción tienen la capacidad de
+		conformar una gran gama de perfiles de acero galvanizado:
+		desde perfilería liviana de 0.45 mm. de espesor hasta
+		perfilería estructural de 2.0 mm, y alma de perfil desde 40
+		mm. hasta 250 mm de ancho.
+      </p>
+
+      <p class="text-gray-700 mb-8 leading-relaxed">
+        Además, Aceros Synergy produce cubiertas y accesorios como
+		tejas coloniales de acero galvanizado prepintado,
+		campamentos in situ tipo K-Span, canaletas y bajantes
+		conformados en acero prepintado.
+      </p>
+
+   <div class="text-center flex flex-col items-center gap-4">
+  <!-- MENSAJE EN 2 LÍNEAS -->
+  <span class="text-lg font-semibold text-gray-900">
+    CONOCE NUESTRA <br>
+    POLITICA DE CALIDAD
+  </span>
+
+  <!-- BOTÓN DEBAJO -->
+  <a href="pdf/Politica-2022.pdf"
+     class="flex items-center justify-center border border-black px-6 py-3 font-bold hover:bg-black hover:text-white transition">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
+    </svg>
+    VER POLÍTICA
+  </a>
+</div>
+
+
+    </div>
+
+    <!-- IMAGEN -->
+    <div class="max-w-xl mx-auto">
+
+  <!-- SLIDER -->
+  <div class="relative overflow-hidden rounded-xl shadow-lg">
+
+    <div id="sliderTrack"
+         class="flex transition-transform duration-700 ease-in-out">
+
+      <img src="images/0-Sli.jpg"
+           class="w-full flex-shrink-0 h-[420px] object-cover">
+
+      <img src="images/1-Sli.jpg"
+           class="w-full flex-shrink-0 h-[420px] object-cover">
+
+      <img src="images/2-Sli.jpg"
+           class="w-full flex-shrink-0 h-[420px] object-cover">
+
+      <img src="images/3-Sli.jpg"
+           class="w-full flex-shrink-0 h-[420px] object-cover">
+    </div>
+  </div>
+
+  <!-- PUNTITOS -->
+  <div class="flex justify-center gap-2 mt-4">
+    <span class="slider-dot active"></span>
+    <span class="slider-dot"></span>
+    <span class="slider-dot"></span>
+    <span class="slider-dot"></span>
+  </div>
+
+</div>
+<style>
+  .slider-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 9999px;
+    background-color: #d1d5db; /* gris claro */
+    transition: all 0.3s ease;
+  }
+
+  .slider-dot.active {
+    background-color: #6b7280; /* gris oscuro */
+    transform: scale(1.25);
+  }
+</style>
+<script>
+  const slider = document.getElementById("sliderTrack");
+  const dots = document.querySelectorAll(".slider-dot");
+  const total = dots.length;
+  let index = 0;
+
+  function updateSlider() {
+    slider.style.transform = `translateX(-${index * 100}%)`;
+
+    dots.forEach(dot => dot.classList.remove("active"));
+    dots[index].classList.add("active");
+  }
+
+  setInterval(() => {
+    index = (index + 1) % total;
+    updateSlider();
+  }, 4000);
+</script>
+
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+
+
+    
+    
+	
+<br>
+<!-- Banner Horizontal -->
+<!-- Banner Horizontal -->
+<!-- Banner Horizontal -->
+<section class="bg-gray-700/20 py-6">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 items-center gap-6">
+
+    <!-- TÍTULO A LA IZQUIERDA -->
+    <div class="text-black text-center md:text-left">
+      <h2 class="text-xl md:text-2xl lg:text-3xl font-bold uppercase leading-snug">
+        Homologación y Certificación bajo <br>
+        Normas Internacionales ISO 9001-2025
+      </h2>
+    </div>
+
+    <!-- IMAGEN A LA DERECHA -->
+    <div class="flex justify-center md:justify-end">
+      <img src="images/QR-Weeb-1024x378.png" 
+           alt="Certificación ISO 9001" 
+           class="rounded shadow-lg max-w-[80%] md:max-w-[60%] h-auto">
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+<section class="bg-white py-16">
+  <div class="max-w-4xl mx-auto text-center px-6">
+
+    <h2 class="text-2xl md:text-3xl font-bold mb-4">
+      CATALOGO SYNERGY ACEROS
+    </h2>
+
+    <p class="text-base md:text-lg text-gray-700 mb-8">
+      Descarga nuestros catálogos de manera gratuita.<br>
+      Toda la información necesaria acerca de perfileria <br>
+	  para su proyecto.
+    </p>
+
+    <div class="flex flex-col md:flex-row justify-center gap-6">
+      <a href="pdf/FichaAcero2019-Edit.pdf" class="flex items-center justify-center border border-black px-6 py-3 font-bold hover:bg-black hover:text-white transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
+        </svg>
+        SYNERGY ACEROS
+      </a>
+
+    
+    </div>
+
+  </div>
+</section>
+	
+	  
+<!-- SECCION CONTACTENOS -->
+ <!-- SECCION CONTACTENOS -->
+<section class="bg-gray-700/20 py-12">
+  <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+    
+    <!-- TEXTO -->
+    <div class="mb-6 md:mb-0 md:ml-20 text-center md:text-left">
+      <h3 class="text-2xl md:text-4x2 font-extrabold text-black">
+        ENCUENTRA A UN EXPERTO QUE TE BRINDE ASESORÍA
+      </h3>
+
+      <p class="mt-3 text-sm md:text-base text-gray-700 max-w-xl">
+        Contáctanos por WhatsApp y expertos de confianza te ayudarán.
+      </p>
+    </div>
+  
+    <!-- BOTÓN -->
+  <button
+  id="btnContactos"
+  class="btn-contactos px-8 py-3 border-2 border-black font-semibold rounded-lg
+         text-black
+         hover:bg-black
+         transition duration-300
+         md:mr-20"
+>
+  CONTÁCTENOS →
+</button>
+<style>
+  .btn-contactos {
+    color: #000 !important;
+  }
+
+  .btn-contactos:hover {
+    color: #fff !important;
+  }
+</style>
+
+
+
+
+  </div>
+</section>
+
+
+<!--- FORMULARIO OCULTO-->
+<section id="formContacto" class="hidden bg-white py-8">
+  <div class="max-w-3xl mx-auto px-3">
+
+    <h2 class="text-base font-bold mb-2">
+      SOLUCIONES INNOVADORAS CON ALCANCE NACIONAL
+    </h2>
+
+    <p class="mb-5 text-xs text-gray-600 leading-relaxed">
+      Synergy presente a nivel nacional, con experiencia y sólidas relaciones
+      para gestionar proyectos de cualquier complejidad.
+    </p>
+
+    <form id="formularioWhatsapp" class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+
+      <!-- Tipo consulta -->
+      <div class="md:col-span-2">
+        <select id="tipoConsulta" class="w-full border border-gray-300 px-2 py-1.5" required>
+          <option value="">Tipo Consulta (requerido)</option>
+          <option>General</option>
+          <option>Producto específico</option>
+          <option>Sistema constructivo</option>
+          <option>Servicio</option>
+        </select>
+      </div>
+
+      <input type="text" id="nombre" placeholder="Nombre" class="border border-gray-300 px-2 py-1.5" required>
+      <input type="text" id="apellido" placeholder="Apellido" class="border border-gray-300 px-2 py-1.5" required>
+      <input type="email" id="correo" placeholder="Correo Electrónico" class="border border-gray-300 px-2 py-1.5 md:col-span-2" required>
+      <input type="text" id="empresa" placeholder="Empresa" class="border border-gray-300 px-2 py-1.5">
+      <input type="text" id="telefono" placeholder="Teléfono (requerido)" class="border border-gray-300 px-2 py-1.5" required>
+      <textarea id="mensaje" rows="3" placeholder="Mensaje" class="border border-gray-300 px-2 py-1.5 md:col-span-2"></textarea>
+
+      <div class="md:col-span-2 flex items-center gap-3">
+        <button type="submit" class="border border-black px-3 py-1 text-xs font-semibold hover:bg-black hover:text-white transition">
+          Enviar →
+        </button>
+
+        <span class="text-[11px] text-gray-500">
+          Envíe mensaje a WhatsApp
+        </span>
+      </div>
+
+    </form>
+  </div>
+</section>
+
+<script>
+  const btn = document.getElementById('btnContactos');
+  const form = document.getElementById('formContacto');
+  const navbar = document.querySelector('nav');
+
+  btn.addEventListener('click', () => {
+    form.classList.toggle('hidden');
+    const offset = navbar ? navbar.offsetHeight + 20 : 100;
+    window.scrollTo({
+      top: form.offsetTop - offset,
+      behavior: 'smooth'
+    });
+  });
+
+  // Enviar datos a WhatsApp
+  const formulario = document.getElementById('formularioWhatsapp');
+  formulario.addEventListener('submit', function(e) {
+    e.preventDefault(); // Evita que el formulario haga submit normal
+
+    // Obtener valores
+    const tipo = document.getElementById('tipoConsulta').value;
+    const nombre = document.getElementById('nombre').value;
+    const apellido = document.getElementById('apellido').value;
+    const correo = document.getElementById('correo').value;
+    const empresa = document.getElementById('empresa').value;
+    const telefono = document.getElementById('telefono').value;
+    const mensaje = document.getElementById('mensaje').value;
+
+    // Formar el mensaje para WhatsApp
+    let texto = `*Nuevo mensaje de contacto*%0A`;
+    texto += `Tipo de Consulta: ${tipo}%0A`;
+    texto += `Nombre: ${nombre} ${apellido}%0A`;
+    texto += `Correo: ${correo}%0A`;
+    texto += `Empresa: ${empresa}%0A`;
+    texto += `Teléfono: ${telefono}%0A`;
+    texto += `Mensaje: ${mensaje}`;
+
+    // Número de WhatsApp (Bolivia sin 0 ni +)
+    const numero = "59169252476";
+
+    // Abrir WhatsApp Web / App
+    const url = `https://wa.me/${numero}?text=${texto}`;
+    window.open(url, "_blank");
+  });
+</script>
+	  
+	
+	  	  
+	  
+	
+ <footer class="bg-black text-gray-400 text-sm py-6">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- EMPRESA -->
+      <div>
+        <h3 class="text-white font-semibold mb-2 uppercase text-xs tracking-wider">
+          SOCIEDAD SYNERGY LTDA.
+        </h3>
+        <p class="leading-snug max-w-sm">
+          Soluciones constructivas para construcción en seco y tableros de madera.
+        </p>
+      </div>
+
+      <!-- NAVEGACIÓN -->
+      <div>
+        <h3 class="text-white font-semibold mb-2 uppercase text-xs tracking-wider">
+          Navegación
+        </h3>
+        <ul class="space-y-1">
+          <li><a href="index.html" class="hover:text-white transition">Inicio</a></li>
+          <li><a href="nosotros.html" class="hover:text-white transition">Nosotros</a></li>
+          <li><a href="productos-categoria.html" class="hover:text-white transition">Productos</a></li>
+          <li><a href="aceros.html" class="hover:text-white transition">Aceros</a></li>
+           <li><a href="clubes.html" class="hover:text-white transition">Clubes</a></li>
+            <li><a href="contactos.html" class="hover:text-white transition">Contactos</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACTO -->
+     <div>
+  <h3 class="text-white font-semibold mb-2 uppercase text-xs tracking-wider">
+    Contacto
+  </h3>
+
+  <p class="text-gray-400 leading-snug mb-3 max-w-xs">
+    Atención personalizada y asesoramiento técnico.
+    Contáctenos directamente vía WhatsApp.
+  </p>
+
+  <a
+    href="https://wa.me/59169252476"
+    target="_blank"
+    class="inline-flex items-center gap-2
+           border border-gray-600
+           px-4 py-1.5
+           text-xs font-semibold text-white
+           hover:text-green-400 hover:border-green-400
+           transition-colors duration-300"
+  >
+    <!-- Ícono WhatsApp -->
+    <svg xmlns="http://www.w3.org/2000/svg"
+         class="w-4 h-4 transition-colors duration-300"
+         fill="currentColor"
+         viewBox="0 0 24 24">
+      <path
+        d="M12.04 2C6.56 2 2.09 6.47 2.09 11.95c0 2.11.55 4.16 1.6 5.96L2 22l4.24-1.58a9.89 9.89 0 0 0 4.8 1.23h.01c5.48 0 9.95-4.47 9.95-9.95C20.99 6.47 17.52 2 12.04 2z"
+      />
+    </svg>
+
+    Escríbanos por WhatsApp
+  </a>
+</div>
+
+
+    </div>
+
+    <!-- LÍNEA INFERIOR -->
+    <div class="border-t border-gray-800 mt-6 pt-3 text-center text-[11px] text-gray-500">
+      © <script>document.write(new Date().getFullYear())</script> Sociedad Synergy Ltda.
+    </div>
+
+  </div>
+</footer>
+
+	
+	
+	  
+
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>

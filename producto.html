@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Synergy</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Course Project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<link rel="icon" href="images/ICONOS(1).png" type="image/x-icon">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<style>
+	.main_nav_item a {
+	  position: relative;
+	  display: inline-block;
+	  padding: 8px 10px;
+	  font-weight: 500;
+	  color: #000;
+	  text-decoration: none;
+	  transition: color 0.3s ease;
+	}
+  
+	.main_nav_item a::after {
+	  content: "";
+	  position: absolute;
+	  left: 0;
+	  bottom: 0;
+	  width: 0%;
+	  height: 2px;
+	  background-color: #000000; /* Rojo estilo cargado */
+	  transition: width 0.4s ease;
+	}
+  
+	.main_nav_item a:hover::after {
+	  width: 100%;
+	}
+  
+	.main_nav_item a:hover {
+	  color: #000000; /* También puedes mantenerlo en negro si prefieres */
+	}
+  </style>
+  
+  
+
+</head>
+<body>
+
+<div class="super_container">
+	<!-- Header -->
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<header class="fixed top-0 left-0 w-full bg-white z-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-center justify-between h-[90px]">
+
+      <!-- LOGO (SIEMPRE IZQUIERDA) -->
+      <div class="flex items-center">
+        <img
+          src="images/1-LogoNeg.png"
+          alt="Synergy"
+          class="h-[60px] w-auto"
+        />
+      </div>
+
+      <!-- NAV DESKTOP -->
+      <nav class="hidden md:flex items-center gap-6">
+
+        <!-- MENU -->
+        <ul class="flex items-center gap-4 text-sm font-medium text-black">
+  <li>
+    <a href="index.html" class="nav-link">INICIO</a>
+  </li>
+  <li>
+    <a href="nosotros.html" class="nav-link">NOSOTROS</a>
+  </li>
+  <li>
+    <a href="productos-categoria.html" class="nav-link">PRODUCTOS</a>
+  </li>
+
+  <li>
+    <a href="clubes.html" class="nav-link">CLUBES</a>
+  </li>
+  <li>
+    <a href="contactos.html" class="nav-link">CONTACTOS</a>
+  </li>
+</ul>
+
+
+        <!-- REDES SOCIALES -->
+         <div class="flex items-center gap-2 ml-6">
+          <a href="https://www.facebook.com/SynergyBolivia" class="social-icon">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/synergybolivia/" class="social-icon">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/@synergybolivia4431" class="social-icon">
+            <i class="bi bi-youtube"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/synergybolivia/" class="social-icon">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://wa.me/59169252476" class="social-icon">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+
+      </nav>
+
+      <!-- HAMBURGER MOBILE -->
+      <!-- Hamburger -->
+<div
+  class="hamburger_container md:hidden
+         flex items-center justify-center
+         w-10 h-10
+         rounded-md
+         cursor-pointer
+         text-black
+         hover:bg-gray-100
+         transition"
+>
+  <i class="fas fa-bars text-xl"></i>
+</div>
+
+
+    </div>
+    
+  </div>
+  
+</header>
+<style>
+  .social-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 9999px;
+    border: 1.5px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    transition: all 0.25s ease;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .social-icon:hover {
+    background: #000;
+    color: #fff;
+    transform: translateY(-2px);
+  }
+
+  body {
+    padding-top: 10px; /* para que el header fijo no tape contenido */
+  }
+  .nav-link {
+  position: relative;
+  padding: 6px 4px;
+  color: #000;
+  text-decoration: none;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.35s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+.nav-link.active::after {
+  width: 100%;
+}
+
+</style>
+
+  <!-- Mobile Menu -->
+  
+	<!-- Menu -->
+	<!-- Menu -->
+	<!-- Menú Móvil -->
+<div class="mobile_menu d-md-none" style="display: none;">
+	<ul class="mobile_menu_list">
+	  <li class="mobile_menu_item"><a href="index.html">INICIO</a></li>
+	  <li class="mobile_menu_item"><a href="nosotros.html">NOSOTROS</a></li>
+	  <li class="mobile_menu_item"><a href="productos-categoria.html">PRODUCTOS</a></li>
+	  
+  
+	  <!-- Clubes con submenú -->
+	  <li class="mobile_menu_item"><a href="clubes.html">CLUBES</a></li>
+  
+	  <li class="mobile_menu_item"><a href="contactos.html">CONTACTOS</a></li>
+	</ul>
+  </div>
+  
+  <!-- Estilos -->
+  <style>
+	.mobile_menu {
+  background-color: #ffffff;
+  padding: 15px;
+  position: fixed;
+  top: 65px;   /* 🔥 ANTES 60px */
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+  
+	.mobile_menu_list {
+	  list-style: none;
+	  padding-left: 0;
+	  margin: 0;
+	}
+  
+	.mobile_menu_list a {
+	  color: #070707;
+	  font-weight: 500;
+	  text-decoration: none;
+	}
+  
+	.mobile_menu_list a:hover {
+	  color: #ff5252;
+	}
+  
+	.mobile_menu_item {
+	  margin: 10px 0;
+	  padding-left: 20px;
+	}
+  
+	.submenu {
+	  display: none;
+	  padding-left: 20px;
+	  margin-top: 5px;
+	}
+  
+	.submenu-toggle {
+	  cursor: pointer;
+	  transition: color 0.3s ease;
+	}
+  
+	.submenu-toggle:hover {
+	  color: #ffcc00;
+	}
+  
+	.submenu.show {
+	  display: block;
+	}
+  </style>
+  
+  <!-- Script -->
+  <script>
+	document.addEventListener('DOMContentLoaded', function () {
+	  // Mostrar/Ocultar el menú móvil
+	  document.querySelector('.hamburger_container')?.addEventListener('click', function () {
+		const mobileMenu = document.querySelector('.mobile_menu');
+		mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
+	  });
+  
+	  // Mostrar/Ocultar submenús
+	  document.querySelectorAll('.submenu-toggle').forEach(function (toggle) {
+		toggle.addEventListener('click', function (e) {
+		  e.preventDefault();
+		  const submenu = this.nextElementSibling;
+		  submenu.classList.toggle('show');
+		});
+	  });
+	});
+  </script>
+  
+
+
+
+
+
+  <br>
+ 
+<div class="max-w-6xl mx-auto px-6 py-10">
+
+    <!-- Breadcrumb dinámico -->
+     <br>
+    <nav class="text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
+        <ol class="inline-flex items-center space-x-1">
+            <li>
+                <a href="index.html" class="hover:underline">Home</a>
+                <span class="mx-1">/</span>
+            </li>
+            <li>
+                <a href="productos-categoria.html#productos" class="hover:underline">Productos</a>
+                <span class="mx-1">/</span>
+            </li>
+            <li id="breadcrumbProduct" class="text-indigo-500 font-semibold" aria-current="page">
+                Detalle
+            </li>
+        </ol>
+    </nav>
+
+    <div class="flex flex-col md:flex-row gap-16">
+
+        <!-- GALERÍA DE MINIATURAS -->
+        <div class="flex gap-4">
+            <div class="flex flex-col gap-3">
+                <img onclick="changeImage(this)" src="" class="w-20 border rounded cursor-pointer hover:border-indigo-500">
+                <img onclick="changeImage(this)" src="" class="w-20 border rounded cursor-pointer hover:border-indigo-500">
+                <img onclick="changeImage(this)" src="" class="w-20 border rounded cursor-pointer hover:border-indigo-500">
+                <img onclick="changeImage(this)" src="" class="w-20 border rounded cursor-pointer hover:border-indigo-500">
+            </div>
+
+            <!-- IMAGEN PRINCIPAL -->
+            <div class="border rounded p-2">
+                <img id="mainImage" src="" class="w-[350px]">
+            </div>
+        </div>
+
+        <!-- INFO DEL PRODUCTO -->
+        <div class="w-full md:w-1/2">
+            <h1 id="productName" class="text-3xl font-semibold">Nombre del producto</h1>
+
+            <div class="flex items-center mt-2 text-indigo-500" id="productRating">
+                ★★★★☆ <span id="productCategory" class="ml-2 text-gray-500">(Categoría)</span>
+            </div>
+
+            <div class="mt-6 product-description">
+                <p class="font-medium">Descripción</p>
+                <ul class="list-disc ml-5 text-gray-500" id="productDesc">
+                    <!-- JS cargará los <li> aquí -->
+                </ul>
+            </div>
+
+            <div class="mt-4">
+                <p class="line-through text-gray-400" id="oldPrice">$0</p>
+                <p class="text-2xl font-semibold" id="price">$0</p>
+                <span class="text-sm text-gray-500">Incluye impuestos</span>
+            </div>
+
+            <div class="flex gap-4 mt-8">
+                <button class="w-full py-3 bg-gray-200 hover:bg-gray-300">Cotizar</button>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<script>
+    // OBJETO CON TODOS LOS PRODUCTOS
+    const productos = {
+        "Perfil Galvanizado": {
+            category: "Construcción",
+            img: "IMAGENES/1-ConsPlacaSt/0-PlacaSt.jpg",
+            thumbnails: [
+                "IMAGENES/1-ConsPlacaSt/0-PlacaSt.jpg",
+                "IMAGENES/1-ConsPlacaSt/1-PlacaSt.jpg",
+                "IMAGENES/1-ConsPlacaSt/2-PlacaSt.jpg",
+                "IMAGENES/1-ConsPlacaSt/3-PlacaSt.jpg"
+            ],
+            description: [
+                "Perfil galvanizado de alta resistencia",
+                "Ideal para estructuras secas",
+                "Fácil de instalar"
+            ],
+            price: 80,
+            oldPrice: 100,
+            rating: 4
+        },
+        "Perfil Madera": {
+            category: "Madera",
+            img: "IMAGENES/1-MadAuro/0-TraAu.png",
+            thumbnails: [
+                "IMAGENES/1-MadAuro/0-TraAu.png",
+                "IMAGENES/1-MadAuro/1-TramAuro.jpg",
+                "IMAGENES/1-MadAuro/2-TramAuro.jpg"
+            ],
+            description: [
+                "Perfil de madera tratada",
+                "Ideal para proyectos de interior",
+                "Acabado liso y resistente"
+            ],
+            price: 70,
+            oldPrice: 90,
+            rating: 5
+        },
+         "Perfil3": {
+            category: "Construcción",
+            img: "IMAGENES/2-ConsPlacaR/0-PlacaR.jpg",
+            thumbnails: [
+              "IMAGENES/2-ConsPlacaR/0-PlacaR.jpg",
+                "IMAGENES/2-ConsPlacaR/1-PlacaR.jpg",
+                "IMAGENES/2-ConsPlacaR/2-PlacaR.jpg"
+            ],
+            description: [
+                "Perfil de madera tratada",
+                "Ideal para proyectos de interior",
+                "Acabado liso y resistente"
+            ],
+            price: 70,
+            oldPrice: 90,
+            rating: 5
+        },
+		"Perfil4": {
+            category: "Madera",
+            img: "IMAGENES/2-MadMdf/1-Mdf.jpg",
+            thumbnails: [
+                "IMAGENES/2-MadMdf/1-Mdf.jpg",
+                "IMAGENES/2-MadMdf/2-Mdf.jpg",
+                "IMAGENES/2-MadMdf/3-Mdf.jpg"
+                
+            ],
+            description: [
+                "Perfil SYNERGY SYN",
+                "Ideal SYN",
+                "Acabado SYN SYN "
+            ],
+            price: 70,
+            oldPrice: 90,
+            rating: 5
+        },
+        	"Perfil5": {
+            category: "Madera",
+            img: "IMAGENES/3-ConsPlacaV/0-PlacaV.jpg",
+            thumbnails: [
+                "IMAGENES/3-ConsPlacaV/0-PlacaV.jpg",
+                "IMAGENES/3-ConsPlacaV/1-PlacaV.jpg",
+                "IMAGENES/3-ConsPlacaV/2-PlacaV.jpg"
+                
+            ],
+            description: [
+                "Perfil SYNERGY SYN",
+                "Ideal SYN",
+                "Acabado SYN SYN "
+            ],
+            price: 70,
+            oldPrice: 90,
+            rating: 5
+        },
+        "Perfil6": {
+            category: "Madera",
+            img: "IMAGENES/3-MadCiliegio/0-Cio.jpg",
+            thumbnails: [
+                "IMAGENES/3-MadCiliegio/0-Cio.jpg",
+                "IMAGENES/3-MadCiliegio/1-Cio.jpg",
+                "IMAGENES/3-MadCiliegio/2-Cio.jpg"
+                
+            ],
+            description: [
+                "Perfil SYNERGY SYN",
+                "Ideal SYN",
+                "Acabado SYN SYN "
+            ],
+            price: 70,
+            oldPrice: 90,
+            rating: 5
+        },
+         "Perfil7": {
+            category: "Madera",
+            img: "IMAGENES/4-ConsMasilla/4-Masilla.jpg",
+            thumbnails: [
+                "IMAGENES/4-ConsMasilla/4-Masilla.jpg",
+                "IMAGENES/4-ConsMasilla/5-Masilla.jpg",
+                "IMAGENES/4-ConsMasilla/6-Masilla.jpg"
+                
+            ],
+            description: [
+                "Perfil SYNERGY SYN",
+                "Ideal SYN",
+                "Acabado SYN SYN "
+            ],
+            price: 70,
+            oldPrice: 90,
+            rating: 5
+        }
+    };
+
+    // Función para cambiar imagen principal
+    function changeImage(el) {
+        document.getElementById("mainImage").src = el.src;
+    }
+
+    // Obtener producto desde URL
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get("name") || "Producto";
+    const product = productos[name];
+
+    if (product) {
+        // Actualizar DOM
+        document.getElementById("productName").textContent = name;
+        document.getElementById("breadcrumbProduct").textContent = name;
+        document.getElementById("productCategory").textContent = `(${product.category})`;
+        document.getElementById("mainImage").src = product.img;
+        document.getElementById("price").textContent = `$${product.price}`;
+        document.getElementById("oldPrice").textContent = `$${product.oldPrice}`;
+
+        // Rating
+        const stars = "★".repeat(product.rating) + "☆".repeat(5 - product.rating);
+        document.getElementById("productRating").childNodes[0].textContent = stars;
+
+        // Miniaturas
+        const thumbnails = document.querySelectorAll(".flex.flex-col img");
+        thumbnails.forEach((thumb, i) => {
+            thumb.src = product.thumbnails[i] || product.img;
+        });
+
+        // Descripción
+        const descList = document.getElementById("productDesc");
+        descList.innerHTML = "";
+        product.description.forEach(desc => {
+            const li = document.createElement("li");
+            li.textContent = desc;
+            descList.appendChild(li);
+        });
+    } else {
+        document.getElementById("productName").textContent = "Producto no encontrado";
+        document.getElementById("breadcrumbProduct").textContent = "Producto no encontrado";
+    }
+</script>
+
+
+
+
+<section class="bg-white py-16">
+  <div class="max-w-4xl mx-auto text-center px-6">
+
+    <h2 class="text-2xl md:text-3xl font-bold mb-4">
+      DESCARGAR CATÁLOGO
+    </h2>
+
+    <p class="text-base md:text-lg text-gray-700 mb-8">
+      Descarga nuestros catálogos de manera gratuita.<br>
+      Toda la información necesaria acerca de materiales para su proyecto.
+    </p>
+
+    <div class="flex flex-col md:flex-row justify-center gap-6">
+
+  <!-- BOTÓN CONSTRUCCIÓN -->
+  <a href="pdf/Catalogo-Construccion-2019-2020.pdf"
+     download
+     class="flex items-center justify-center border border-black px-6 py-3 font-bold
+            hover:bg-black hover:text-white transition">
+
+    <svg xmlns="http://www.w3.org/2000/svg"
+         class="h-5 w-5 mr-2"
+         fill="none"
+         viewBox="0 0 24 24"
+         stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
+    </svg>
+
+    CONSTRUCCIÓN
+  </a>
+
+  <!-- BOTÓN MADERA -->
+  <a href="pdf/CatalogoMadera2020.pdf"
+     download
+     class="flex items-center justify-center border border-black px-6 py-3 font-bold
+            hover:bg-black hover:text-white transition">
+
+    <svg xmlns="http://www.w3.org/2000/svg"
+         class="h-5 w-5 mr-2"
+         fill="none"
+         viewBox="0 0 24 24"
+         stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
+    </svg>
+
+    MADERA
+  </a>
+
+</div>
+
+  </div>
+</section>
+	  
+
+<footer class="bg-black text-gray-400 text-sm py-6">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- EMPRESA -->
+      <div>
+        <h3 class="text-white font-semibold mb-2 uppercase text-xs tracking-wider">
+          SOCIEDAD SYNERGY LTDA.
+        </h3>
+        <p class="leading-snug max-w-sm">
+          Soluciones constructivas para construcción en seco y tableros de madera.
+        </p>
+      </div>
+
+      <!-- NAVEGACIÓN -->
+      <div>
+        <h3 class="text-white font-semibold mb-2 uppercase text-xs tracking-wider">
+          Navegación
+        </h3>
+        <ul class="space-y-1">
+          <li><a href="index.html" class="hover:text-white transition">Inicio</a></li>
+          <li><a href="nosotros.html" class="hover:text-white transition">Nosotros</a></li>
+          <li><a href="productos-categoria.html" class="hover:text-white transition">Productos</a></li>
+       
+           <li><a href="clubes.html" class="hover:text-white transition">Clubes</a></li>
+            <li><a href="contactos.html" class="hover:text-white transition">Contactos</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACTO -->
+     <div>
+  <h3 class="text-white font-semibold mb-2 uppercase text-xs tracking-wider">
+    Contacto
+  </h3>
+
+  <p class="text-gray-400 leading-snug mb-3 max-w-xs">
+    Atención personalizada y asesoramiento técnico.
+    Contáctenos directamente vía WhatsApp.
+  </p>
+
+  <a
+    href="https://wa.me/59169252476"
+    target="_blank"
+    class="inline-flex items-center gap-2
+           border border-gray-600
+           px-4 py-1.5
+           text-xs font-semibold text-white
+           hover:text-green-400 hover:border-green-400
+           transition-colors duration-300"
+  >
+    <!-- Ícono WhatsApp -->
+    <svg xmlns="http://www.w3.org/2000/svg"
+         class="w-4 h-4 transition-colors duration-300"
+         fill="currentColor"
+         viewBox="0 0 24 24">
+      <path
+        d="M12.04 2C6.56 2 2.09 6.47 2.09 11.95c0 2.11.55 4.16 1.6 5.96L2 22l4.24-1.58a9.89 9.89 0 0 0 4.8 1.23h.01c5.48 0 9.95-4.47 9.95-9.95C20.99 6.47 17.52 2 12.04 2z"
+      />
+    </svg>
+
+    Escríbanos por WhatsApp
+  </a>
+</div>
+
+
+    </div>
+
+    <!-- LÍNEA INFERIOR -->
+    <div class="border-t border-gray-800 mt-6 pt-3 text-center text-[11px] text-gray-500">
+      © <script>document.write(new Date().getFullYear())</script> Sociedad Synergy Ltda.
+    </div>
+
+  </div>
+</footer>
+	
+
+<script>
+/* 🚫 Bloquear clic derecho */
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+
+/* 🚫 Bloquear teclas comunes de inspección */
+document.addEventListener('keydown', function(e) {
+
+    // F12
+    if (e.key === "F12") {
+        e.preventDefault();
+    }
+
+    // Ctrl + Shift + I / J / C
+    if (e.ctrlKey && e.shiftKey && (
+        e.key === "I" || e.key === "i" ||
+        e.key === "J" || e.key === "j" ||
+        e.key === "C" || e.key === "c"
+    )) {
+        e.preventDefault();
+    }
+
+    // Ctrl + U (ver código fuente)
+    if (e.ctrlKey && (e.key === "U" || e.key === "u")) {
+        e.preventDefault();
+    }
+
+    // Ctrl + S (guardar página)
+    if (e.ctrlKey && (e.key === "S" || e.key === "s")) {
+        e.preventDefault();
+    }
+});
+
+/* 🚫 Bloquear selección de texto */
+document.addEventListener('selectstart', function(e) {
+    e.preventDefault();
+});
+
+/* 🚫 Bloquear copiar */
+document.addEventListener('copy', function(e) {
+    e.preventDefault();
+});
+
+/* 🚫 Detectar DevTools */
+setInterval(function() {
+    if (window.outerWidth - window.innerWidth > 150 || 
+        window.outerHeight - window.innerHeight > 150) {
+        document.body.innerHTML = "<h1 style='color:red;text-align:center;'>Acceso no permitido</h1>";
+    }
+}, 1000);
+</script>
+	  	  
+
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+
+</html>

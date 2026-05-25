@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Productos - Synergy</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Course Project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<link rel="icon" href="images/ICONOS(1).png" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<style>
+	.main_nav_item a {
+	  position: relative;
+	  display: inline-block;
+	  padding: 8px 10px;
+	  font-weight: 500;
+	  color: #000;
+	  text-decoration: none;
+	  transition: color 0.3s ease;
+	}
+  
+	.main_nav_item a::after {
+	  content: "";
+	  position: absolute;
+	  left: 0;
+	  bottom: 0;
+	  width: 0%;
+	  height: 2px;
+	  background-color: #000000; /* Rojo estilo cargado */
+	  transition: width 0.4s ease;
+	}
+  
+	.main_nav_item a:hover::after {
+	  width: 100%;
+	}
+  
+	.main_nav_item a:hover {
+	  color: #000000; /* También puedes mantenerlo en negro si prefieres */
+	}
+  </style>
+  <style>
+    :root {
+      --color-principal: #0d6efd;
+      --color-secundario: #6c757d;
+      --color-fondo: #f0f4f8;
+      --color-texto: #212529;
+      --color-hover: #0056b3;
+      --sombra: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--color-fondo);
+      margin: 0;
+     
+    }
+
+    h1 {
+      text-align: center;
+      color: var(--color-principal);
+      margin-bottom: 30px;
+      font-size: 36px;
+    }
+
+    #buscador, #categoriaSelect {
+      display: block;
+      margin: 10px auto;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 95%;
+      max-width: 450px;
+      background-color: #fff;
+    }
+
+    .grid-productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      padding: 20px 10px;
+    }
+
+    .producto {
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      width: 240px;
+      box-shadow: var(--sombra);
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .producto:hover {
+      transform: scale(1.03);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+    }
+
+    .producto img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .producto h3 {
+      padding: 15px;
+      font-size: 16px;
+      color: var(--color-texto);
+      text-align: center;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 180px;
+      width: 100%;
+      background: rgba(13, 110, 253, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .producto:hover .overlay {
+      opacity: 1;
+    }
+
+    .enlace-producto {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      height: 100%;
+    }
+
+    .paginacion {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .paginacion button {
+      margin: 5px;
+      padding: 10px 15px;
+      border: none;
+      background: var(--color-principal);
+      color: white;
+      font-size: 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      
+    }
+
+    .paginacion button:hover {
+      background: var(--color-hover);
+      transform: translateY(-2px);
+    }
+
+    .paginacion button.active {
+      background: var(--color-hover);
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .producto {
+        width: 45%;
+      }
+
+      .overlay {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .producto {
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      #buscador, #categoriaSelect {
+        width: 90%;
+      }
+
+      .overlay {
+        font-size: 16px;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+<div class="super_container">
+	<!-- Header -->
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<header class="fixed top-0 left-0 w-full bg-white z-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-center justify-between h-[90px]">
+
+      <!-- LOGO (SIEMPRE IZQUIERDA) -->
+      <div class="flex items-center">
+        <img
+          src="images/1-LogoNeg.png"
+          alt="Synergy"
+          class="h-[60px] w-auto"
+        />
+      </div>
+
+      <!-- NAV DESKTOP -->
+      <nav class="hidden md:flex items-center gap-6">
+
+        <!-- MENU -->
+        <ul class="flex items-center gap-4 text-sm font-medium text-black">
+  <li>
+    <a href="index.html" class="nav-link">INICIO</a>
+  </li>
+  <li>
+    <a href="nosotros.html" class="nav-link">NOSOTROS</a>
+  </li>
+  <li>
+    <a href="productos-categoria.html" class="nav-link">PRODUCTOS</a>
+  </li>
+ 
+  <li>
+    <a href="clubes.html" class="nav-link">CLUBES</a>
+  </li>
+  <li>
+    <a href="contactos.html" class="nav-link">CONTACTOS</a>
+  </li>
+</ul>
+
+
+        <!-- REDES SOCIALES -->
+         <div class="flex items-center gap-2 ml-6">
+          <a href="https://www.facebook.com/SynergyBolivia" class="social-icon">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/synergybolivia/" class="social-icon">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/@synergybolivia4431" class="social-icon">
+            <i class="bi bi-youtube"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/synergybolivia/" class="social-icon">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://wa.me/59169252476" class="social-icon">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+
+      </nav>
+
+      <!-- HAMBURGER MOBILE -->
+      <!-- Hamburger -->
+<div
+  class="hamburger_container md:hidden
+         flex items-center justify-center
+         w-10 h-10
+         rounded-md
+         cursor-pointer
+         text-black
+         hover:bg-gray-100
+         transition"
+>
+  <i class="fas fa-bars text-xl"></i>
+</div>
+
+
+    </div>
+    
+  </div>
+  
+</header>
+<style>
+  .social-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 9999px;
+    border: 1.5px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    transition: all 0.25s ease;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .social-icon:hover {
+    background: #000;
+    color: #fff;
+    transform: translateY(-2px);
+  }
+
+  body {
+    padding-top: 10px; /* para que el header fijo no tape contenido */
+  }
+  .nav-link {
+  position: relative;
+  padding: 6px 4px;
+  color: #000;
+  text-decoration: none;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.35s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+.nav-link.active::after {
+  width: 100%;
+}
+
+</style>
+
+  <!-- Mobile Menu -->
+  
+	<!-- Menu -->
+	<!-- Menu -->
+	<!-- Menú Móvil -->
+<div class="mobile_menu d-md-none" style="display: none;">
+	<ul class="mobile_menu_list">
+	  <li class="mobile_menu_item"><a href="index.html">INICIO</a></li>
+	  <li class="mobile_menu_item"><a href="nosotros.html">NOSOTROS</a></li>
+	  <li class="mobile_menu_item"><a href="productos-categoria.html">PRODUCTOS</a></li>
+	 
+  
+	  <!-- Clubes con submenú -->
+	  <li class="mobile_menu_item"><a href="clubes.html">CLUBES</a></li>
+  
+	  <li class="mobile_menu_item"><a href="contactos.html">CONTACTOS</a></li>
+	</ul>
+  </div>
+  
+  <!-- Estilos -->
+  <style>
+	.mobile_menu {
+  background-color: #ffffff;
+  padding: 15px;
+  position: fixed;
+  top: 65px;   /* 🔥 ANTES 60px */
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+  
+	.mobile_menu_list {
+	  list-style: none;
+	  padding-left: 0;
+	  margin: 0;
+	}
+  
+	.mobile_menu_list a {
+	  color: #070707;
+	  font-weight: 500;
+	  text-decoration: none;
+	}
+  
+	.mobile_menu_list a:hover {
+	  color: #ff5252;
+	}
+  
+	.mobile_menu_item {
+	  margin: 10px 0;
+	  padding-left: 20px;
+	}
+  
+	.submenu {
+	  display: none;
+	  padding-left: 20px;
+	  margin-top: 5px;
+	}
+  
+	.submenu-toggle {
+	  cursor: pointer;
+	  transition: color 0.3s ease;
+	}
+  
+	.submenu-toggle:hover {
+	  color: #ffcc00;
+	}
+  
+	.submenu.show {
+	  display: block;
+	}
+  </style>
+  
+  <!-- Script -->
+  <script>
+	document.addEventListener('DOMContentLoaded', function () {
+	  // Mostrar/Ocultar el menú móvil
+	  document.querySelector('.hamburger_container')?.addEventListener('click', function () {
+		const mobileMenu = document.querySelector('.mobile_menu');
+		mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
+	  });
+  
+	  // Mostrar/Ocultar submenús
+	  document.querySelectorAll('.submenu-toggle').forEach(function (toggle) {
+		toggle.addEventListener('click', function (e) {
+		  e.preventDefault();
+		  const submenu = this.nextElementSibling;
+		  submenu.classList.toggle('show');
+		});
+	  });
+	});
+  </script>
+
+<!-- Home -->
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+<br>
+<!-- GALERÍA DE PRODUCTOS -->
+<!-- ========================= -->
+<!-- ===================================== -->
+<!-- GALERÍA PREMIUM RESPONSIVE PRODUCTOS -->
+<!-- ===================================== -->
+
+
+<!-- ====================================== -->
+<!-- GALERÍA HOVER DINÁMICA PREMIUM -->
+<!-- ====================================== -->
+
+<section class="w-full bg-[#f5f5f5] py-20 overflow-hidden">
+
+  <div class="max-w-7xl mx-auto px-4 md:px-6">
+
+    <!-- TITULO -->
+    <div class="text-center mb-16">
+
+      <span class="uppercase tracking-[5px] text-[#0b2d5c] font-semibold text-sm">
+        SYNERGY BOLIVIA
+      </span>
+
+      <h2 class="mt-4 text-3xl md:text-5xl font-black text-black">
+        NUESTROS PRODUCTOS
+      </h2>
+
+      <div class="w-24 h-1 bg-[#0b2d5c] mx-auto mt-6 rounded-full"></div>
+
+      <p class="mt-6 text-gray-600 text-sm md:text-lg max-w-3xl mx-auto">
+        Soluciones modernas para construcción en seco,
+        steel framing y acabados arquitectónicos.
+      </p>
+
+    </div>
+
+    <!-- ================= FILA 1 ================= -->
+    <div class="fila-productos">
+
+      <!-- CARD -->
+      <div class="card-hover">
+
+        <img src="IMAGENES/PRODUCTOS/1-Pro.jpg"
+             class="card-img">
+
+        <div class="card-overlay"></div>
+
+        <div class="card-content">
+
+          <h3 class="card-title">
+            PLACAS DE YESO
+          </h3>
+
+          <p class="card-subtitle">
+            Construcción en seco
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="card-hover">
+
+        <img src="IMAGENES/PRODUCTOS/2-Pro.jpg"
+             class="card-img">
+
+        <div class="card-overlay"></div>
+
+        <div class="card-content">
+
+          <h3 class="card-title">
+            AISLANTES TÉRMICOS
+          </h3>
+
+          <p class="card-subtitle">
+            Protección y eficiencia
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="card-hover">
+
+        <img src="IMAGENES/PRODUCTOS/3-Pro.jpg"
+             class="card-img">
+
+        <div class="card-overlay"></div>
+
+        <div class="card-content">
+
+          <h3 class="card-title">
+            PERFILERÍA
+          </h3>
+
+          <p class="card-subtitle">
+            Acero galvanizado
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ================= FILA 2 ================= -->
+    <div class="fila-productos mt-6">
+
+      <!-- CARD -->
+      <div class="card-hover">
+
+        <img src="IMAGENES/PRODUCTOS/3-Pro.jpg"
+             class="card-img">
+
+        <div class="card-overlay"></div>
+
+        <div class="card-content">
+
+          <h3 class="card-title">
+            COMPLEMENTOS DRYWALL
+          </h3>
+
+          <p class="card-subtitle">
+            Masillas y cintas
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="card-hover">
+
+        <img src="IMAGENES/PRODUCTOS/5.jpg"
+             class="card-img">
+
+        <div class="card-overlay"></div>
+
+        <div class="card-content">
+
+          <h3 class="card-title">
+            CARPINTERÍA EN ALUMINIO
+          </h3>
+
+          <p class="card-subtitle">
+            Sistemas modernos
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="card-hover">
+
+        <img src="IMAGENES/PRODUCTOS/6.jpg"
+             class="card-img">
+
+        <div class="card-overlay"></div>
+
+        <div class="card-content">
+
+          <h3 class="card-title">
+            PUERTAS Y VENTANAS PVC
+          </h3>
+
+          <p class="card-subtitle">
+            Alta durabilidad
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ================= FILA 3 ================= -->
+    <div class="fila-productos mt-6">
+
+      <!-- CARD -->
+      <div class="card-hover">
+
+        <img src="IMAGENES/PRODUCTOS/7.jpg"
+             class="card-img">
+
+        <div class="card-overlay"></div>
+
+        <div class="card-content">
+
+          <h3 class="card-title">
+            IMPERMEABILIZACIÓN
+          </h3>
+
+          <p class="card-subtitle">
+            Protección estructural
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="card-hover">
+
+        <img src="IMAGENES/PRODUCTOS/8.jpg"
+             class="card-img">
+
+        <div class="card-overlay"></div>
+
+        <div class="card-content">
+
+          <h3 class="card-title">
+            STEEL FRAMING
+          </h3>
+
+          <p class="card-subtitle">
+            Construcción industrializada
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="card-hover">
+
+        <img src="IMAGENES/PRODUCTOS/9.jpg"
+             class="card-img">
+
+        <div class="card-overlay"></div>
+
+        <div class="card-content">
+
+          <h3 class="card-title">
+            SISTEMAS DRYWALL
+          </h3>
+
+          <p class="card-subtitle">
+            Soluciones arquitectónicas
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ESTILOS -->
+<style>
+/* ========================= */
+/* FILAS */
+/* ========================= */
+
+.fila-productos{
+  display: flex;
+  gap: 14px;
+  width: 100%;
+}
+
+/* ========================= */
+/* CARDS MÁS COMPACTAS */
+/* ========================= */
+
+.card-hover{
+  position: relative;
+
+  flex: 1;
+
+  height: 210px; /* 🔥 MÁS PEQUEÑO */
+
+  overflow: hidden;
+
+  border-radius: 18px;
+
+  cursor: pointer;
+
+  transition: all .55s ease;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,.10);
+}
+
+/* ========================= */
+/* EFECTO HOVER */
+/* ========================= */
+
+.fila-productos:hover .card-hover{
+  flex: 1;
+}
+
+.fila-productos .card-hover:hover{
+  flex: 2.2; /* 🔥 MÁS SUAVE */
+}
+
+/* ========================= */
+/* IMAGEN */
+/* ========================= */
+
+.card-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: transform .7s ease;
+}
+
+.card-hover:hover .card-img{
+  transform: scale(1.04);
+}
+
+/* ========================= */
+/* OVERLAY */
+/* ========================= */
+
+.card-overlay{
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,.82),
+    rgba(0,0,0,.18),
+    rgba(0,0,0,.05)
+  );
+}
+
+/* ========================= */
+/* CONTENIDO */
+/* ========================= */
+
+.card-content{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  z-index: 2;
+
+  padding: 18px;
+}
+
+.card-title{
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 800;
+
+  line-height: 1.1;
+}
+
+.card-subtitle{
+  margin-top: 4px;
+
+  color: rgba(255,255,255,.82);
+
+  font-size: 12px;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media(max-width:768px){
+
+  .fila-productos{
+    flex-direction: column;
+  }
+
+  .card-hover{
+    height: 180px;
+
+    flex: unset !important;
+
+    border-radius: 16px;
+  }
+
+  .card-content{
+    padding: 15px;
+  }
+
+  .card-title{
+    font-size: 15px;
+  }
+
+  .card-subtitle{
+    font-size: 11px;
+  }
+
+}
+
+</style>
+  
+  
+  
+ 
+  
+
+<script>
+/* 🚫 Bloquear clic derecho */
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+
+/* 🚫 Bloquear teclas comunes de inspección */
+document.addEventListener('keydown', function(e) {
+
+    // F12
+    if (e.key === "F12") {
+        e.preventDefault();
+    }
+
+    // Ctrl + Shift + I / J / C
+    if (e.ctrlKey && e.shiftKey && (
+        e.key === "I" || e.key === "i" ||
+        e.key === "J" || e.key === "j" ||
+        e.key === "C" || e.key === "c"
+    )) {
+        e.preventDefault();
+    }
+
+    // Ctrl + U (ver código fuente)
+    if (e.ctrlKey && (e.key === "U" || e.key === "u")) {
+        e.preventDefault();
+    }
+
+    // Ctrl + S (guardar página)
+    if (e.ctrlKey && (e.key === "S" || e.key === "s")) {
+        e.preventDefault();
+    }
+});
+
+/* 🚫 Bloquear selección de texto */
+document.addEventListener('selectstart', function(e) {
+    e.preventDefault();
+});
+
+/* 🚫 Bloquear copiar */
+document.addEventListener('copy', function(e) {
+    e.preventDefault();
+});
+
+/* 🚫 Detectar DevTools */
+setInterval(function() {
+    if (window.outerWidth - window.innerWidth > 150 || 
+        window.outerHeight - window.innerHeight > 150) {
+        document.body.innerHTML = "<h1 style='color:red;text-align:center;'>Acceso no permitido</h1>";
+    }
+}, 1000);
+</script>	
+  
+  
+  
+  
+<!-- ===================================== -->
+<!-- BOTÓN FLOTANTE SYNEREX -->
+<!-- ===================================== -->
+<!-- ===================================== -->
+<!-- BOTÓN FLOTANTE MINIMAL PREMIUM -->
+<!-- ===================================== -->
+<!-- ===================================== -->
+<!-- BOTÓN FLOTANTE ESTILO MODERNO -->
+<!-- ===================================== -->
+<!-- ===================================== -->
+<!-- ICONO FLOTANTE SYNEREX -->
+<!-- ===================================== -->
+<!-- ===================================== -->
+<!-- ICONO FLOTANTE SYNEREX -->
+<!-- ===================================== -->
+<!-- ===================================== -->
+<!-- ICONO FLOTANTE SYNEREX -->
+<!-- ===================================== -->
+
+<a href="https://synerex.com.bo/"
+   target="_blank"
+   class="synerex-float">
+
+    <!-- TEXTO CIRCULAR -->
+    <svg class="circular-text" viewBox="0 0 100 100">
+
+        <defs>
+            <path id="circlePath"
+                  d="M 50,50
+                     m -38,0
+                     a 38,38 0 1,1 76,0
+                     a 38,38 0 1,1 -76,0"/>
+        </defs>
+
+        <text>
+            <textPath href="#circlePath">
+                • CONSTRUCCIÓN DE PROYECTOS •
+            </textPath>
+        </text>
+
+    </svg>
+
+    <!-- LOGO -->
+    <img src="IMAGENES/SYNEREX/isologitipo_syx-azul.png"
+         alt="Synerex"
+         class="synerex-logo">
+
+</a>
+
+<!-- ESTILOS -->
+<style>
+
+.synerex-float{
+
+    position: fixed;
+
+    right: 22px;
+    bottom: 22px;
+
+    z-index: 9999;
+
+    width: 88px;
+    height: 88px;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    box-shadow:
+      0 10px 30px rgba(0,0,0,.18);
+
+    transition: all .35s ease;
+
+    overflow: hidden;
+}
+
+/* HOVER */
+.synerex-float:hover{
+
+    transform: translateY(-6px) scale(1.05);
+
+    box-shadow:
+      0 16px 38px rgba(0,0,0,.25);
+}
+
+/* LOGO */
+.synerex-logo{
+
+    width: 42px;
+    height: 42px;
+
+    object-fit: contain;
+
+    position: relative;
+
+    z-index: 3;
+
+    transition: transform .35s ease;
+}
+
+.synerex-float:hover .synerex-logo{
+
+    transform: scale(1.08);
+}
+
+/* TEXTO CIRCULAR */
+.circular-text{
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    animation: rotateText 12s linear infinite;
+}
+
+.circular-text text{
+
+    fill: #0b2d5c;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+/* ROTACIÓN */
+@keyframes rotateText{
+
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+
+}
+
+/* EFECTO PULSO */
+.synerex-float::before{
+
+    content: "";
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+
+    border: 2px solid rgba(11,45,92,.20);
+
+    animation: synerexPulse 2s infinite;
+}
+
+@keyframes synerexPulse{
+
+    0%{
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    100%{
+      transform: scale(1.35);
+      opacity: 0;
+    }
+
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    .synerex-float{
+
+        width: 72px;
+        height: 72px;
+
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .synerex-logo{
+
+        width: 34px;
+        height: 34px;
+    }
+
+    .circular-text text{
+
+        font-size: 6px;
+    }
+
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+ 
+		 
+		
+	
+
+
+<section class="bg-white py-16">
+  <div class="max-w-4xl mx-auto text-center px-6">
+
+    <h2 class="text-2xl md:text-3xl font-bold mb-4">
+      DESCARGAR CATÁLOGO
+    </h2>
+
+    <p class="text-base md:text-lg text-gray-700 mb-8">
+      Descarga nuestros catálogos de manera gratuita.<br>
+      Toda la información necesaria acerca de materiales para su proyecto.
+    </p>
+
+    <div class="flex flex-col md:flex-row justify-center gap-6">
+
+  <!-- BOTÓN CONSTRUCCIÓN -->
+  <a href="pdf/Catalogo-Construccion-2019-2020.pdf"
+     download
+     class="flex items-center justify-center border border-black px-6 py-3 font-bold
+            hover:bg-black hover:text-white transition">
+
+    <svg xmlns="http://www.w3.org/2000/svg"
+         class="h-5 w-5 mr-2"
+         fill="none"
+         viewBox="0 0 24 24"
+         stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
+    </svg>
+
+    CONSTRUCCIÓN
+  </a>
+
+  <!-- BOTÓN MADERA -->
+  <a href="pdf/CatalogoMadera2020.pdf"
+     download
+     class="flex items-center justify-center border border-black px-6 py-3 font-bold
+            hover:bg-black hover:text-white transition">
+
+    <svg xmlns="http://www.w3.org/2000/svg"
+         class="h-5 w-5 mr-2"
+         fill="none"
+         viewBox="0 0 24 24"
+         stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
+    </svg>
+
+    MADERA
+  </a>
+
+</div>
+
+  </div>
+</section>
+	  
+<!-- SECCION CONTACTENOS -->
+<!-- SECCION CONTACTENOS -->
+<section class="bg-gray-700/20 py-12">
+  <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+    
+    <!-- TEXTO -->
+    <div class="mb-6 md:mb-0 md:ml-20 text-center md:text-left">
+      <h3 class="text-2xl md:text-4x2 font-extrabold text-black">
+        ENCUENTRA A UN EXPERTO QUE TE BRINDE ASESORÍA
+      </h3>
+
+      <p class="mt-3 text-sm md:text-base text-gray-700 max-w-xl">
+        Contáctanos por WhatsApp y expertos de confianza te ayudarán.
+      </p>
+    </div>
+  
+    <!-- BOTÓN -->
+  <button
+  id="btnContactos"
+  class="btn-contactos px-8 py-3 border-2 border-black font-semibold rounded-lg
+         text-black
+         hover:bg-black
+         transition duration-300
+         md:mr-20"
+>
+  CONTÁCTENOS →
+</button>
+<style>
+  .btn-contactos {
+    color: #000 !important;
+  }
+
+  .btn-contactos:hover {
+    color: #fff !important;
+  }
+</style>
+
+
+
+
+  </div>
+</section>
+
+
+<!--- FORMULARIO OCULTO-->
+<section id="formContacto" class="hidden bg-white py-8">
+  <div class="max-w-3xl mx-auto px-3">
+
+    <h2 class="text-base font-bold mb-2">
+      SOLUCIONES INNOVADORAS CON ALCANCE NACIONAL
+    </h2>
+
+    <p class="mb-5 text-xs text-gray-600 leading-relaxed">
+      Synergy presente a nivel nacional, con experiencia y sólidas relaciones
+      para gestionar proyectos de cualquier complejidad.
+    </p>
+
+    <form id="formularioWhatsapp" class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+
+      <!-- Tipo consulta -->
+      <div class="md:col-span-2">
+        <select id="tipoConsulta" class="w-full border border-gray-300 px-2 py-1.5" required>
+          <option value="">Tipo Consulta (requerido)</option>
+          <option>General</option>
+          <option>Producto específico</option>
+          <option>Sistema constructivo</option>
+          <option>Servicio</option>
+        </select>
+      </div>
+
+      <input type="text" id="nombre" placeholder="Nombre" class="border border-gray-300 px-2 py-1.5" required>
+      <input type="text" id="apellido" placeholder="Apellido" class="border border-gray-300 px-2 py-1.5" required>
+      <input type="email" id="correo" placeholder="Correo Electrónico" class="border border-gray-300 px-2 py-1.5 md:col-span-2" required>
+      <input type="text" id="empresa" placeholder="Empresa" class="border border-gray-300 px-2 py-1.5">
+      <input type="text" id="telefono" placeholder="Teléfono (requerido)" class="border border-gray-300 px-2 py-1.5" required>
+      <textarea id="mensaje" rows="3" placeholder="Mensaje" class="border border-gray-300 px-2 py-1.5 md:col-span-2"></textarea>
+
+      <div class="md:col-span-2 flex items-center gap-3">
+        <button type="submit" class="border border-black px-3 py-1 text-xs font-semibold hover:bg-black hover:text-white transition">
+          Enviar →
+        </button>
+
+        <span class="text-[11px] text-gray-500">
+          Envíe mensaje a WhatsApp
+        </span>
+      </div>
+
+    </form>
+  </div>
+</section>
+
+<script>
+  const btn = document.getElementById('btnContactos');
+  const form = document.getElementById('formContacto');
+  const navbar = document.querySelector('nav');
+
+  btn.addEventListener('click', () => {
+    form.classList.toggle('hidden');
+    const offset = navbar ? navbar.offsetHeight + 20 : 100;
+    window.scrollTo({
+      top: form.offsetTop - offset,
+      behavior: 'smooth'
+    });
+  });
+
+  // Enviar datos a WhatsApp
+  const formulario = document.getElementById('formularioWhatsapp');
+  formulario.addEventListener('submit', function(e) {
+    e.preventDefault(); // Evita que el formulario haga submit normal
+
+    // Obtener valores
+    const tipo = document.getElementById('tipoConsulta').value;
+    const nombre = document.getElementById('nombre').value;
+    const apellido = document.getElementById('apellido').value;
+    const correo = document.getElementById('correo').value;
+    const empresa = document.getElementById('empresa').value;
+    const telefono = document.getElementById('telefono').value;
+    const mensaje = document.getElementById('mensaje').value;
+
+    // Formar el mensaje para WhatsApp
+    let texto = `*Nuevo mensaje de contacto*%0A`;
+    texto += `Tipo de Consulta: ${tipo}%0A`;
+    texto += `Nombre: ${nombre} ${apellido}%0A`;
+    texto += `Correo: ${correo}%0A`;
+    texto += `Empresa: ${empresa}%0A`;
+    texto += `Teléfono: ${telefono}%0A`;
+    texto += `Mensaje: ${mensaje}`;
+
+    // Número de WhatsApp (Bolivia sin 0 ni +)
+    const numero = "59169252476";
+
+    // Abrir WhatsApp Web / App
+    const url = `https://wa.me/${numero}?text=${texto}`;
+    window.open(url, "_blank");
+  });
+</script>
+	  
+	
+
+<footer class="bg-black text-gray-400 text-sm py-6">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- EMPRESA -->
+      <div>
+        <h3 class="text-white font-semibold mb-2 uppercase text-xs tracking-wider">
+          SOCIEDAD SYNERGY LTDA.
+        </h3>
+        <p class="leading-snug max-w-sm">
+          Soluciones constructivas para construcción en seco y tableros de madera.
+        </p>
+      </div>
+
+      <!-- NAVEGACIÓN -->
+      <div>
+        <h3 class="text-white font-semibold mb-2 uppercase text-xs tracking-wider">
+          Navegación
+        </h3>
+        <ul class="space-y-1">
+          <li><a href="index.html" class="hover:text-white transition">Inicio</a></li>
+          <li><a href="nosotros.html" class="hover:text-white transition">Nosotros</a></li>
+          <li><a href="productos-categoria.html" class="hover:text-white transition">Productos</a></li>
+          
+           <li><a href="clubes.html" class="hover:text-white transition">Clubes</a></li>
+            <li><a href="contactos.html" class="hover:text-white transition">Contactos</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACTO -->
+     <div>
+  <h3 class="text-white font-semibold mb-2 uppercase text-xs tracking-wider">
+    Contacto
+  </h3>
+
+  <p class="text-gray-400 leading-snug mb-3 max-w-xs">
+    Atención personalizada y asesoramiento técnico.
+    Contáctenos directamente vía WhatsApp.
+  </p>
+
+  <a
+    href="https://wa.me/59169252476"
+    target="_blank"
+    class="inline-flex items-center gap-2
+           border border-gray-600
+           px-4 py-1.5
+           text-xs font-semibold text-white
+           hover:text-green-400 hover:border-green-400
+           transition-colors duration-300"
+  >
+    <!-- Ícono WhatsApp -->
+    <svg xmlns="http://www.w3.org/2000/svg"
+         class="w-4 h-4 transition-colors duration-300"
+         fill="currentColor"
+         viewBox="0 0 24 24">
+      <path
+        d="M12.04 2C6.56 2 2.09 6.47 2.09 11.95c0 2.11.55 4.16 1.6 5.96L2 22l4.24-1.58a9.89 9.89 0 0 0 4.8 1.23h.01c5.48 0 9.95-4.47 9.95-9.95C20.99 6.47 17.52 2 12.04 2z"
+      />
+    </svg>
+
+    Escríbanos por WhatsApp
+  </a>
+</div>
+
+
+    </div>
+
+    <!-- LÍNEA INFERIOR -->
+    <div class="border-t border-gray-800 mt-6 pt-3 text-center text-[11px] text-gray-500">
+      © <script>document.write(new Date().getFullYear())</script> Sociedad Synergy Ltda.
+    </div>
+
+  </div>
+</footer>
+	
+	
+	
+	  
+
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
